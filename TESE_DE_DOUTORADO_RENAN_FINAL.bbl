@@ -1,0 +1,684 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.6 }
+
+\bibitem[Akaike 1997]{akaike1973}
+\abntrefinfo{Akaike}{AKAIKE}{1997}
+{AKAIKE, H. {Information theory and an extension of the maximum likelihood
+  principle}.
+\emph{2nd International Symposium on Information Theory}, p. 267--281, 1997.}
+
+\bibitem[Anscombe 1973]{anscombe1973graphs}
+\abntrefinfo{Anscombe}{ANSCOMBE}{1973}
+{ANSCOMBE, F.~J. Graphs in statistical analysis.
+\emph{The American Statistician}, Taylor \& Francis Group, v.~27, n.~1, p.
+  17--21, 1973.}
+
+\bibitem[Aries e Guy 2008]{aries2008}
+\abntrefinfo{Aries e Guy}{ARIES; GUY}{2008}
+{ARIES, M. B.~C.; GUY, R.~N. {Effect of daylight saving time on lighting energy
+  use: A literature review}.
+\emph{Energy Policy}, v.~36, n.~6, p. 1858--1866, 2008.}
+
+\bibitem[Arvate et al. 2015]{arvate2015}
+\abntrefinfo{Arvate et al.}{ARVATE et al.}{2015}
+{ARVATE, P. et al. {Lighting and violent crimes: evaluating the effect of an
+  electrification policy in rural Brazil on violent crime reduction}.
+\emph{Working paper 7/2015}, São Paulo School of Economics. Center of Applied
+  Economics., 2015.}
+
+\bibitem[Banerjee, Carlin e Gelfand 2004]{banerjee2004hierarchical}
+\abntrefinfo{Banerjee, Carlin e Gelfand}{BANERJEE; CARLIN; GELFAND}{2004}
+{BANERJEE, S.; CARLIN, B.; GELFAND, A. \emph{Hierarchical modeling and analysis
+  for spatial data}. [S.l.]: Chapman \& Hall/CRC, 2004. v.~101.}
+
+\bibitem[Becker 1968]{becker1968economy}
+\abntrefinfo{Becker}{BECKER}{1968}
+{BECKER, G. {Crime and Punishment: an economic approach}.
+\emph{Journal of Political Economy}, v.~76, p. 169--217, 1968.}
+
+\bibitem[Besag 1974]{besag1974}
+\abntrefinfo{Besag}{BESAG}{1974}
+{BESAG, J. {Spatial Interaction and Statistical Analysis of Lattice Systems}.
+\emph{Journal of the Royal Statistical Society. Series B.}, v.~36, n.~2, p.
+  579--602, 1974.}
+
+\bibitem[Besag, York e Mollie 1991]{besag1991}
+\abntrefinfo{Besag, York e Mollie}{BESAG; YORK; MOLLIE}{1991}
+{BESAG, J.; YORK, J.; MOLLIE, A. {Bayesian image restoration, with two
+  applications in spatial statistics}.
+\emph{Annals of the Institute of Statistical Mathematics}, v.~43, p. 1--59,
+  1991.}
+
+\bibitem[Bivand, Pebesma e Gómez-Rubio 2008]{bivand2008spatialwithR}
+\abntrefinfo{Bivand, Pebesma e Gómez-Rubio}{BIVAND; PEBESMA;
+  GóMEZ-RUBIO}{2008}
+{BIVAND, R.~S.; PEBESMA, E.; GóMEZ-RUBIO, V. \emph{Applied Spatial Data
+  Analysis with R}. [S.l.]: Springer, 2008.}
+
+\bibitem[Blangiardo et al. 2013]{blangiardo2013epidemiology}
+\abntrefinfo{Blangiardo et al.}{BLANGIARDO et al.}{2013}
+{BLANGIARDO, M. et al. Spatial and spatio-temporal models with r-inla.
+\emph{Spatial and Spatio-temporal Epidemiology}, Elsevier, v.~7, p. 39--55,
+  2013.}
+
+\bibitem[Britto 2014]{britto2014analise}
+\abntrefinfo{Britto}{BRITTO}{2014}
+{BRITTO, M.~C. An{\'a}lise dos homic{\'\i}dios ocorridos em juiz de fora entre
+  os anos de 1980 a 2012 e sua rela{\c{c}}{\~a}o com as condi{\c{c}}{\~o}es
+  clim{\'a}ticas.
+\emph{Revista Brasileira de Climatologia}, v.~13, 2014.}
+
+\bibitem[Calonico, Cattaneo e Titiunik 2014]{calonico2014robust}
+\abntrefinfo{Calonico, Cattaneo e Titiunik}{CALONICO; CATTANEO; TITIUNIK}{2014}
+{CALONICO, S.; CATTANEO, M.~D.; TITIUNIK, R. Robust nonparametric confidence
+  intervals for regression-discontinuity designs.
+\emph{Econometrica}, Wiley Online Library, v.~82, n.~6, p. 2295--2326, 2014.}
+
+\bibitem[Calonico, Cattaneo e Titiunik 2015]{calonico2015rdrobust}
+\abntrefinfo{Calonico, Cattaneo e Titiunik}{CALONICO; CATTANEO; TITIUNIK}{2015}
+{CALONICO, S.; CATTANEO, M.~D.; TITIUNIK, R. rdrobust: An r package for robust
+  nonparametric inference in regression-discontinuity designs.
+\emph{R Journal}, v.~7, n.~1, p. 38--51, 2015.}
+
+\bibitem[Carvalho A.; Marques da~Silva, Junior e Albuquerque
+  2012]{carvalho2012saude}
+\abntrefinfo{Carvalho A.; Marques da~Silva, Junior e Albuquerque}{CARVALHO A.;
+  MARQUES DA~SILVA; JUNIOR; ALBUQUERQUE}{2012}
+{CARVALHO A.; MARQUES DA~SILVA, G.; JUNIOR, G.~R.; ALBUQUERQUE, P. H.~M. {Taxas
+  Bayesianas para o mapeamento de homicídios nos municípios brasileiros}.
+\emph{Cadernos de Saúde Pública}, v.~28, n.~7, p. 1249--1262, 2012.}
+
+\bibitem[Catelan, Lagazio e Biggeri 2010]{catelan2010biomj}
+\abntrefinfo{Catelan, Lagazio e Biggeri}{CATELAN; LAGAZIO; BIGGERI}{2010}
+{CATELAN, D.; LAGAZIO, C.; BIGGERI, A. {A hierarchical Bayesian approach to
+  multiple testing in disease mapping}.
+\emph{Biometrical Journal}, v.~52, n.~6, 2010.}
+
+\bibitem[Cerqueira et al. 2013]{cerqueira2013brasilemdesen}
+\abntrefinfo{Cerqueira et al.}{CERQUEIRA et al.}{2013}
+{CERQUEIRA, D. et al. \emph{{A singular dinâmica territorial dos homicídios
+  no Brasil nos anos 2000}}. [S.l.]: Brasil em Desenvolvimento 2013: estado,
+  planejamento e políticas públicas. Instituto de Pesquisa Econômica
+  Aplicada, Capítulo 29., 2013.}
+
+\bibitem[Cerqueira, Mello et al. 2013]{cerqueira2013evaluating}
+\abntrefinfo{Cerqueira, Mello et al.}{CERQUEIRA; MELLO et al.}{2013}
+{CERQUEIRA, D.; MELLO, J.~M. D. et al. Evaluating a national anti-firearm law
+  and estimating the causal effect of guns on crime.
+\emph{PUC, Rio de janeiro. Departamento de Economia. Texto para Discuss{\~a}o},
+  n.~607, 2013.}
+
+\bibitem[Cerqueira e MOURA 2015]{cerqueira2015efeito}
+\abntrefinfo{Cerqueira e MOURA}{CERQUEIRA; MOURA}{2015}
+{CERQUEIRA, D.; MOURA, R.~L. O efeito das oportunidades no mercado de trabalho
+  sobre as taxas de homic{\'\i}dios no brasil.
+\emph{Anais do Encontro Associa{\c{c}}{\~a}o Nacional dos Centros de
+  P{\'o}s-Gradua{\c{c}}{\~a}o em Economia. Florian{\'o}polis (SC)}, 2015.}
+
+\bibitem[Cerqueira D.;~Lobão e Carvalho 2005]{cerqueira2005mito}
+\abntrefinfo{Cerqueira D.;~Lobão e Carvalho}{CERQUEIRA D.;~LOBãO;
+  CARVALHO}{2005}
+{CERQUEIRA D.;~LOBãO, W.; CARVALHO, A.~X. \emph{{O jogo dos sete mitos and a
+  miséria da segurança pública no Brasil}}. [S.l.]: Instituto de Pesquisa
+  Econômica e Aplicada. Texto para discussão, nº 1144, 2005.}
+
+\bibitem[Cerqueira 2014]{cerqueira2014tese}
+\abntrefinfo{Cerqueira}{CERQUEIRA}{2014}
+{CERQUEIRA, D. R.~C. \emph{{Causas e Consequências do Crime no Brasil}}.
+  [S.l.]: Tese de Doutorado. Programa de Pós Graduação em Economia da
+  Pontíficia Universidade Católica do Rio de Janeiro., 2014.}
+
+\bibitem[Chang et al. 2016]{shiny}
+\abntrefinfo{Chang et al.}{CHANG et al.}{2016}
+{CHANG, W. et al. \emph{shiny: Web Application Framework for R}.
+[S.l.], 2016. R package version 0.14.2. Dispon{\'\i}vel em:
+  \url{https://CRAN.R-project.org/package=shiny}.}
+
+\bibitem[Cheng, Karambelkar e Xie 2017]{leaflet}
+\abntrefinfo{Cheng, Karambelkar e Xie}{CHENG; KARAMBELKAR; XIE}{2017}
+{CHENG, J.; KARAMBELKAR, B.; XIE, Y. \emph{leaflet: Create Interactive Web Maps
+  with the JavaScript 'Leaflet' Library}.
+[S.l.], 2017. R package version 1.1.0. Dispon{\'\i}vel em:
+  \url{https://CRAN.R-project.org/package=leaflet}.}
+
+\bibitem[Cidade 2012]{cidade2012implementaccao}
+\abntrefinfo{Cidade}{CIDADE}{2012}
+{CIDADE, G. V.~D. A implementa{\c{c}}{\~a}o do pronasci na regi{\~a}o
+  metropolitana de porto alegre: Um estudo sobre o processo e efetividade da
+  federaliza{\c{c}}{\~a}o das pol{\'\i}ticas p{\'u}blicas de seguran{\c{c}}a
+  p{\'u}blica.
+2012.}
+
+\bibitem[Clayton e Kaldor 1987]{clayton1987biometrics}
+\abntrefinfo{Clayton e Kaldor}{CLAYTON; KALDOR}{1987}
+{CLAYTON, D.; KALDOR, J. Empirical bayes estimates of age-standardized relative
+  risks for use in disease mapping.
+\emph{Biometrics}, JSTOR, p. 671--681, 1987.}
+
+\bibitem[Cleveland e Devlin 1988]{cleveland1988locally}
+\abntrefinfo{Cleveland e Devlin}{CLEVELAND; DEVLIN}{1988}
+{CLEVELAND, W.~S.; DEVLIN, S.~J. Locally weighted regression: an approach to
+  regression analysis by local fitting.
+\emph{Journal of the American statistical association}, Taylor \& Francis
+  Group, v.~83, n.~403, p. 596--610, 1988.}
+
+\bibitem[Cleveland e McGill 1984]{cleveland1984graphical}
+\abntrefinfo{Cleveland e McGill}{CLEVELAND; MCGILL}{1984}
+{CLEVELAND, W.~S.; MCGILL, R. Graphical perception: Theory, experimentation,
+  and application to the development of graphical methods.
+\emph{Journal of the American statistical association}, Taylor \& Francis,
+  v.~79, n.~387, p. 531--554, 1984.}
+
+\bibitem[Cortes 2017]{renan2017crimevis}
+\abntrefinfo{Cortes}{CORTES}{2017}
+{CORTES, R. Crimevis: uma ferramenta de visualização de dados de
+  criminalidade.
+ResearchGate, 2017.
+Dispon{\'\i}vel em:
+  \url{https://www.researchgate.net/publication/320962138\_CrimeVis\_uma\_ferramenta\_de\_visualizacao\_de\_dados\_de\_criminalidade}.}
+
+\bibitem[Cortes 2014]{cortes2014dissertacao}
+\abntrefinfo{Cortes}{CORTES}{2014}
+{CORTES, R.~X. \emph{{Estimando modelos dinâmicos utilizando o INLA para
+  Campos Aleatórios Markovianos Não Gaussianos}}. [S.l.]: Dissertação de
+  Mestrado. Pós-graduação em Estatística da Universidade Federal de Minas
+  Gerais., 2014.}
+
+\bibitem[Cortes 2016]{cortes2016tdfee}
+\abntrefinfo{Cortes}{CORTES}{2016}
+{CORTES, R.~X. \emph{{Investigação de padrões criminais e de indicadores de
+  segurança para os municípios do Rio Grande do Sul, por meio de técnicas
+  estatísticas multivariadas}}. [S.l.]: Fundação de Economia e Estatística.
+  Texto para Discussão, no. 143, 2016.}
+
+\bibitem[Dasu e Johnson 2003]{dasu2003exploratory}
+\abntrefinfo{Dasu e Johnson}{DASU; JOHNSON}{2003}
+{DASU, T.; JOHNSON, T. \emph{Exploratory data mining and data cleaning}.
+  [S.l.]: John Wiley \& Sons, 2003. v.~479.}
+
+\bibitem[Dearden e Payne 2009]{dearden2009alcohol}
+\abntrefinfo{Dearden e Payne}{DEARDEN; PAYNE}{2009}
+{DEARDEN, J.; PAYNE, J. Alcohol and homicide in australia.
+\emph{Trends \& issues in crime and criminal justice}, Australian Institute of
+  Criminology, n.~372, p.~1, 2009.}
+
+\bibitem[Dee e Wyckoff 2013]{dee2013}
+\abntrefinfo{Dee e Wyckoff}{DEE; WYCKOFF}{2013}
+{DEE, T.; WYCKOFF, J. \emph{{Incentives, Selection and Teacher Performance:
+  Evidence from IMPACT}}. [S.l.]: National Bureau of Economic Research, 2013.}
+
+\bibitem[DeSouza et al. 2007]{desouza2007}
+\abntrefinfo{DeSouza et al.}{DESOUZA et al.}{2007}
+{DESOUZA, M. F.~M. et al. {Reductions in firearm-related mortality and
+  hospitalizations in Brazil after gun control}.
+\emph{Heath Affairs}, v.~26, n.~2, 2007.}
+
+\bibitem[Dey, Chen e Chang 1997]{deyBio1997}
+\abntrefinfo{Dey, Chen e Chang}{DEY; CHEN; CHANG}{1997}
+{DEY, D.~K.; CHEN, M.~H.; CHANG, H. {Bayesian approach for nonlinear random
+  effects models}.
+\emph{Biometrics}, v.~53, p. 1239--1252, 1997.}
+
+\bibitem[Diaz 2015]{d3plus}
+\abntrefinfo{Diaz}{DIAZ}{2015}
+{DIAZ, J. P.~M. \emph{d3plus: R Htmlwidget for d3plus (http://d3plus.org)}.
+[S.l.], 2015. R package version 0.0.2.}
+
+\bibitem[Doleac e Sanders 2005]{doleac2015}
+\abntrefinfo{Doleac e Sanders}{DOLEAC; SANDERS}{2005}
+{DOLEAC, J.~L.; SANDERS, N.~J. {Under the Cover of Darkness: How Ambient Light
+  Influences Criminal Activity}.
+\emph{Review of Economics and Statistics}, v.~97, n.~5, p. 1093--1103, 2005.}
+
+\bibitem[Donohue, Aneja e Weber 2017]{donohue2017right}
+\abntrefinfo{Donohue, Aneja e Weber}{DONOHUE; ANEJA; WEBER}{2017}
+{DONOHUE, J.~J.; ANEJA, A.; WEBER, K.~D. \emph{Right-to-Carry Laws and Violent
+  Crime: A Comprehensive Assessment Using Panel Data and a State-Level
+  Synthetic Controls Analysis}.
+[S.l.], 2017.}
+
+\bibitem[Fajnzylber, Lederman e Loayza 2002]{fajnzylber2002inequality}
+\abntrefinfo{Fajnzylber, Lederman e Loayza}{FAJNZYLBER; LEDERMAN; LOAYZA}{2002}
+{FAJNZYLBER, P.; LEDERMAN, D.; LOAYZA, N. Inequality and violent crime.
+\emph{The journal of Law and Economics}, The University of Chicago Press,
+  v.~45, n.~1, p. 1--39, 2002.}
+
+\bibitem[Filho et al. 2001]{beato2001conglomerados}
+\abntrefinfo{Filho et al.}{FILHO et al.}{2001}
+{FILHO, C.~C. B. et al. Conglomerados de homic{\'\i}dios e o tr{\'a}fico de
+  drogas em belo horizonte, minas gerais, brasil, de 1995 a 1999.
+\emph{Cad. Sa{\'u}de P{\'u}blica}, v.~17, n.~5, p. 1163--1171, 2001.}
+
+\bibitem[Filho et al. 2012]{filhonaercio2012}
+\abntrefinfo{Filho et al.}{FILHO et al.}{2012}
+{FILHO, N.~M. et al. \emph{{Avaliação Econômica de Projetos Sociais}}.
+  [S.l.]: Dinâmica Gráfica e Editora. Fundação Itaú., 2012.
+ISBN 9788598149042.}
+
+\bibitem[Forgy 1965]{forgy1965cluster}
+\abntrefinfo{Forgy}{FORGY}{1965}
+{FORGY, E. Cluster analysis of multivariate data: efficiency versus
+  interpretability models.
+\emph{Biometrics}, v.~61, n.~3, p. 768--769, 1965.}
+
+\bibitem[Freitas, Cadaval e Gonçalves 2016]{freitas2016xixeeg}
+\abntrefinfo{Freitas, Cadaval e Gonçalves}{FREITAS; CADAVAL; GONçALVES}{2016}
+{FREITAS, T.~A. D.; CADAVAL, A.~F.; GONçALVES, G.~A. \emph{{A estimação de
+  um índice geral de criminalidade para os municípios do Rio Grande do Sul -
+  IGcrime RS}}. [S.l.]: XIX Encontro de Economia da Região Sul., 2016.}
+
+\bibitem[Frischtak e Mandel 2012]{frischtak2012fedny}
+\abntrefinfo{Frischtak e Mandel}{FRISCHTAK; MANDEL}{2012}
+{FRISCHTAK, C.; MANDEL, B.~R. \emph{{Crime, House Prices, and Inequality: The
+  Effect of UPPs in Rio}}. [S.l.]: Federal Reserve Bank of New York Staff
+  Reports, no. 542, 2012.}
+
+\bibitem[Gamble e Hess 2012]{gamble2012temperature}
+\abntrefinfo{Gamble e Hess}{GAMBLE; HESS}{2012}
+{GAMBLE, J.~L.; HESS, J.~J. Temperature and violent crime in dallas, texas:
+  relationships and implications of climate change.
+\emph{Western journal of emergency medicine}, California Chapter of the
+  American Academy of Emergency Medicine (Cal/AAEM), v.~13, n.~3, p.~239,
+  2012.}
+
+\bibitem[Gamerman e Lopes 2006]{gamerman2006markov}
+\abntrefinfo{Gamerman e Lopes}{GAMERMAN; LOPES}{2006}
+{GAMERMAN, D.; LOPES, H. \emph{{Markov chain Monte Carlo: stochastic simulation
+  for Bayesian inference}}. [S.l.]: Chapman \& Hall/CRC, 2006.}
+
+\bibitem[Gelfand e Smith 1990]{gelfand1990sampling}
+\abntrefinfo{Gelfand e Smith}{GELFAND; SMITH}{1990}
+{GELFAND, A.; SMITH, A. {Sampling-based approaches to calculating marginal
+  densities}.
+\emph{Journal of the American statistical association}, American Statistical
+  Association, v.~85, n.~410, p. 398--409, 1990.}
+
+\bibitem[Gelfand, Dey e Chang 1992]{gelfandBS1992}
+\abntrefinfo{Gelfand, Dey e Chang}{GELFAND; DEY; CHANG}{1992}
+{GELFAND, A.~E.; DEY, D.~K.; CHANG, H. {Model determination using predictive
+  distributions, with implementation via sampling-based methods}.
+\emph{Bayesian Statistics 4. Proceedings of the Fourth Valencia International
+  Meeting}, p. 147--159, 1992.}
+
+\bibitem[Gelman e Rubin 1992]{gelman1992}
+\abntrefinfo{Gelman e Rubin}{GELMAN; RUBIN}{1992}
+{GELMAN, A.; RUBIN, D. {Inference from Iterative Simulation Using Multiple
+  Sequences (with discussion)}.
+\emph{Statistical Science}, v.~7, p. 457--511, 1992.}
+
+\bibitem[Geman e Geman 1984]{geman1984gibbs}
+\abntrefinfo{Geman e Geman}{GEMAN; GEMAN}{1984}
+{GEMAN, S.; GEMAN, D. {Stochastic Relaxation, Gibbs Distributions, and the
+  Bayesian Restoration of Images}.
+\emph{IEEE Transactions on Pattern Analysis and Machine Intelligence}, v.~6,
+  n.~6, p. 721--741, 1984.}
+
+\bibitem[Hartung e Pessoa 2011]{hartung2011papel}
+\abntrefinfo{Hartung e Pessoa}{HARTUNG; PESSOA}{2011}
+{HARTUNG, G.~C.; PESSOA, S. \emph{O Papel Das Armas De Fogo Na Queda
+  Doshomic{\'\i}dios Em S{\~a}o Paulo}.
+[S.l.], 2011.}
+
+\bibitem[Hastie 2017]{gamPackage}
+\abntrefinfo{Hastie}{HASTIE}{2017}
+{HASTIE, T. \emph{gam: Generalized Additive Models}.
+[S.l.], 2017. R package version 1.14-4. Dispon{\'\i}vel em:
+  \url{https://CRAN.R-project.org/package=gam}.}
+
+\bibitem[Justus e Kassouf 2008]{justus2012EconomiA}
+\abntrefinfo{Justus e Kassouf}{JUSTUS; KASSOUF}{2008}
+{JUSTUS, M. d.~S.; KASSOUF, A.~L. {Estudos Econômicos das Causas da
+  Criminalidade no Brasil: Evidências e Controvérsias}.
+\emph{Revista EconomiA}, v.~9, n.~2, p. 343--372, 2008.}
+
+\bibitem[Kellogg e Wolff 2008]{kellogg2008}
+\abntrefinfo{Kellogg e Wolff}{KELLOGG; WOLFF}{2008}
+{KELLOGG, R.; WOLFF, H. {Daylight time and energy: Evidence from an Australian
+  experiment}.
+\emph{Journal of Environmental Economics and Management}, v.~56, n.~3, p.
+  207--220, 2008.}
+
+\bibitem[Kelly 2000]{kelly2000inequality}
+\abntrefinfo{Kelly}{KELLY}{2000}
+{KELLY, M. Inequality and crime.
+\emph{The Review of Economics and Statistics}, MIT Press, v.~82, n.~4, p.
+  530--539, 2000.}
+
+\bibitem[Kerber e Pazinato 2016]{kerber2016}
+\abntrefinfo{Kerber e Pazinato}{KERBER; PAZINATO}{2016}
+{KERBER, A.~O.; PAZINATO, E. \emph{{Muitas cabeças, muitas sentenças: Uma
+  análise do PRONASCI em Canoas/RS a partir das representações sociais dos
+  moradores e dos gestores do território de paz}}. [S.l.]: Multi Ideias,
+  2016.}
+
+\bibitem[Khan 2005]{khan2005manual}
+\abntrefinfo{Khan}{KHAN}{2005}
+{KHAN, T. \emph{{Estatística de Criminalidade: Manual de Interpretação}}.
+  Secretaria de Segurança Pública de São Paulo, 2005.
+Dispon{\'\i}vel em:
+  \url{http://www.ssp.sp.gov.br/media/documents/manual\_interpretacao.pdf}.}
+
+\bibitem[Kohavi 1995]{kohavi1995}
+\abntrefinfo{Kohavi}{KOHAVI}{1995}
+{KOHAVI, R. {A study of cross-validation and bootstrap for accuracy estimation
+  and model selection}.
+\emph{Proceedings of the Fourteenth International Joint Conference on
+  Artificial Intelligence}, v.~2, n.~12, p. 1137--1143, 1995.}
+
+\bibitem[Kotchen e Grant 2011]{kotchen2011}
+\abntrefinfo{Kotchen e Grant}{KOTCHEN; GRANT}{2011}
+{KOTCHEN, M.~J.; GRANT, L.~E. {Does Daylight Saving Time Save Energy? Evidence
+  from a Natural Experiment in Indiana}.
+\emph{The Review of Economics and Statistics}, v.~93, n.~4, p. 1172--1185,
+  2011.}
+
+\bibitem[Kountouris e Remondou 2014]{kountouris2014}
+\abntrefinfo{Kountouris e Remondou}{KOUNTOURIS; REMONDOU}{2014}
+{KOUNTOURIS, Y.; REMONDOU, K. {About time: Daylight Saving Time transition and
+  individual well-being}.
+\emph{Economics Letters}, v.~122, n.~1, p. 100--103, 2014.}
+
+\bibitem[LeSage 1997]{lesage1997irsr}
+\abntrefinfo{LeSage}{LESAGE}{1997}
+{LESAGE, J.~P. {Bayesian estimation of spatial autoregressive models}.
+\emph{International Regional Science Review}, v.~20, n.~1-2, p. 113--129,
+  1997.}
+
+\bibitem[LeSage 1999]{lesage1999econometrics}
+\abntrefinfo{LeSage}{LESAGE}{1999}
+{LESAGE, J.~P. \emph{The theory and practice of spatial econometrics}. [S.l.]:
+  Department of Economics, University of Toledo, 1999.}
+
+\bibitem[Loeffler e Grunwald 2015]{loeffler2015processed}
+\abntrefinfo{Loeffler e Grunwald}{LOEFFLER; GRUNWALD}{2015}
+{LOEFFLER, C.~E.; GRUNWALD, B. Processed as an adult: A regression
+  discontinuity estimate of the crime effects of charging nontransfer juveniles
+  as adults.
+\emph{Journal of Research in Crime and Delinquency}, SAGE Publications Sage CA:
+  Los Angeles, CA, v.~52, n.~6, p. 890--922, 2015.}
+
+\bibitem[Marshall 1991]{marshall1991journalserieC}
+\abntrefinfo{Marshall}{MARSHALL}{1991}
+{MARSHALL, R.~J. {Mapping disease and mortality rates using empirical Bayes
+  estimators}.
+\emph{Journal of the Royal Statistical Society: Series C}, v.~40, n.~2, 1991.}
+
+\bibitem[Martino e Rue 2009]{martino2009implementing}
+\abntrefinfo{Martino e Rue}{MARTINO; RUE}{2009}
+{MARTINO, S.; RUE, H. {Implementing approximate Bayesian inference using
+  Integrated Nested Laplace Approximation: A manual for the inla program}.
+\emph{Department of Mathematical Sciences, NTNU, Norway}, Citeseer, 2009.}
+
+\bibitem[Martins et al. 2012]{martins2012bayesian}
+\abntrefinfo{Martins et al.}{MARTINS et al.}{2012}
+{MARTINS, T. et al. {Bayesian computing with INLA: new features}.
+\emph{Department of Mathematical Sciences, NTNU, Norway}, 2012.}
+
+\bibitem[McBride, Joe e Simpson 1991]{mcbride1991prediction}
+\abntrefinfo{McBride, Joe e Simpson}{MCBRIDE; JOE; SIMPSON}{1991}
+{MCBRIDE, A.~A.; JOE, G.~W.; SIMPSON, D.~D. Prediction of long-term alcohol
+  use, drug use, and criminality among inhalant users.
+\emph{Hispanic Journal of Behavioral Sciences}, SAGE PUBLICATIONS, INC. 2455
+  Teller Road, Newbury Park, CA 91320, v.~13, n.~3, p. 315--323, 1991.}
+
+\bibitem[McCandless 2009]{mccandless2009information}
+\abntrefinfo{McCandless}{MCCANDLESS}{2009}
+{MCCANDLESS, D. \emph{Information is beautiful}. [S.l.]: Collins London, 2009.}
+
+\bibitem[Menezes e Souza 2017]{menezes2017relaccoes}
+\abntrefinfo{Menezes e Souza}{MENEZES; SOUZA}{2017}
+{MENEZES, D.~B.; SOUZA, V.~G. de. Rela{\c{c}}{\~o}es entre crimes na regi{\~a}o
+  metropolitana de porto alegre: um primeiro diagn{\'o}stico da
+  organiza{\c{c}}{\~a}o criminal.
+\emph{Indicadores Econ{\^o}micos FEE}, v.~45, n.~1, p. 87--108, 2017.}
+
+\bibitem[Monteiro 2016]{monteiro2009mono}
+\abntrefinfo{Monteiro}{MONTEIRO}{2016}
+{MONTEIRO, J.~B. \emph{{Indicador de Criminalidade Geral Baseado em Métodos
+  Multivariados e Estatística Espacial para Controle na Segurança Pública do
+  Estado}}. [S.l.]: Universidade Federal do Rio Grande do Sul. Monografia do
+  Curso de Estatística., 2016.}
+
+\bibitem[Moran 1950]{moran1950biometrika}
+\abntrefinfo{Moran}{MORAN}{1950}
+{MORAN, P. A.~P. {Notes on Continuous Stochastic Phenomena}.
+\emph{Biometrika}, v.~37, n.~1, p. 17--23, 1950.}
+
+\bibitem[Murray et al. 2015]{murray2015childhood}
+\abntrefinfo{Murray et al.}{MURRAY et al.}{2015}
+{MURRAY, J. et al. Childhood behaviour problems predict crime and violence in
+  late adolescence: Brazilian and british birth cohort studies.
+\emph{Social psychiatry and psychiatric epidemiology}, Springer, v.~50, n.~4,
+  p. 579--589, 2015.}
+
+\bibitem[Neema e B{\"o}hning 2012]{neema2012monitoring}
+\abntrefinfo{Neema e B{\"o}hning}{NEEMA; B{\"O}HNING}{2012}
+{NEEMA, I.; B{\"O}HNING, D. Monitoring murder crime in namibia using bayesian
+  space-time models.
+\emph{Journal of Probability and Statistics}, Hindawi Publishing Corporation,
+  v.~2012, 2012.}
+
+\bibitem[Newton e Felson 2015]{newton2015crime}
+\abntrefinfo{Newton e Felson}{NEWTON; FELSON}{2015}
+{NEWTON, A.; FELSON, M. crime patterns in time and space: the dynamics of crime
+  opportunities in urban areas.
+\emph{Crime science}, Springer, v.~4, n.~1, p.~1--5, 2015.}
+
+\bibitem[Norris 1998]{norris1998markov}
+\abntrefinfo{Norris}{NORRIS}{1998}
+{NORRIS, J.~R. \emph{Markov chains}. [S.l.]: Cambridge university press, 1998.}
+
+\bibitem[Pringle 1996]{pringle1996ecosoc}
+\abntrefinfo{Pringle}{PRINGLE}{1996}
+{PRINGLE, D.~G. {Mapping disease risk estimates based on small numbers: an
+  assessment of empirical Bayes techniques}.
+\emph{Economia and Social Review}, v.~27, n.~4, 1996.}
+
+\bibitem[{R Core Team} 2016]{softwareR}
+\abntrefinfo{{R Core Team}}{{R Core Team}}{2016}
+{{R Core Team}. \emph{R: A Language and Environment for Statistical Computing}.
+Vienna, Austria, 2016. Dispon{\'\i}vel em: \url{https://www.R-project.org/}.}
+
+\bibitem[Raftery e Lewis 1992]{raftery1992}
+\abntrefinfo{Raftery e Lewis}{RAFTERY; LEWIS}{1992}
+{RAFTERY, A.; LEWIS, S. {How Many Iterations in the Gibbs Sampler?}
+\emph{Bayesian Statistics}, v.~4, p. 763--773, 1992.}
+
+\bibitem[Ranson 2014]{ranson2014crime}
+\abntrefinfo{Ranson}{RANSON}{2014}
+{RANSON, M. Crime, weather, and climate change.
+\emph{Journal of environmental economics and management}, Elsevier, v.~67,
+  n.~3, p. 274--302, 2014.}
+
+\bibitem[Reichenheim et al. 2011]{reichenheim2011}
+\abntrefinfo{Reichenheim et al.}{REICHENHEIM et al.}{2011}
+{REICHENHEIM, M.~E. et al. {Reductions in firearm-related mortality and
+  hospitalizations in Brazil after gun control}.
+\emph{Heath Affairs}, v.~377, n.~9781, 2011.}
+
+\bibitem[Rey 2001]{rey2001spatial}
+\abntrefinfo{Rey}{REY}{2001}
+{REY, S.~J. Spatial empirics for economic growth and convergence.
+\emph{Geographical Analysis}, Wiley Online Library, v.~33, n.~3, p. 195--214,
+  2001.}
+
+\bibitem[Rey, Mack e Koschinsky 2012]{rey2012exploratory}
+\abntrefinfo{Rey, Mack e Koschinsky}{REY; MACK; KOSCHINSKY}{2012}
+{REY, S.~J.; MACK, E.~A.; KOSCHINSKY, J. Exploratory space--time analysis of
+  burglary patterns.
+\emph{Journal of Quantitative Criminology}, Springer, v.~28, n.~3, p. 509--531,
+  2012.}
+
+\bibitem[Rostirolla 2016]{rostirolla2016mono}
+\abntrefinfo{Rostirolla}{ROSTIROLLA}{2016}
+{ROSTIROLLA, C.~C. \emph{{Armas e Crimes na região metropolitana de Porto
+  Alegre: Uma análise de dados em painel}}. [S.l.]: Monografia do ICEAC.
+  Universidade Federal do Rio Grande., 2016.}
+
+\bibitem[Rue e Held 2005]{rue2005gaussian}
+\abntrefinfo{Rue e Held}{RUE; HELD}{2005}
+{RUE, H.; HELD, L. \emph{Gaussian Markov random fields: theory and
+  applications}. [S.l.]: CRC press, 2005.}
+
+\bibitem[Rue, Martino e Chopin 2009]{rue2009approximate}
+\abntrefinfo{Rue, Martino e Chopin}{RUE; MARTINO; CHOPIN}{2009}
+{RUE, H.; MARTINO, S.; CHOPIN, N. {Approximate Bayesian inference for latent
+  Gaussian models by using integrated nested Laplace approximations}.
+\emph{Journal of the Royal Statistical Society: Series B(Statistical
+  Methodology)}, Citeseer, v.~71, n.~2, p. 319--392, 2009.}
+
+\bibitem[Ruiz-C{\'a}rdenas, Krainski e Rue 2011]{ruiz2011direct}
+\abntrefinfo{Ruiz-C{\'a}rdenas, Krainski e Rue}{RUIZ-C{\'A}RDENAS; KRAINSKI;
+  RUE}{2011}
+{RUIZ-C{\'A}RDENAS, R.; KRAINSKI, E.; RUE, H. Direct fitting of dynamic models
+  using integrated nested laplace approximations--inla.
+\emph{Computational Statistics \& Data Analysis}, Elsevier, 2011.}
+
+\bibitem[Salvi 2011]{salvi2011}
+\abntrefinfo{Salvi}{SALVI}{2011}
+{SALVI, S. \emph{{Does Increased Lighting Reduce Crime? Studying the Impact of
+  the Summer Night Lights Program on Crime in Los Angeles}}. [S.l.]:
+  Departmento de Economia da Amherst College, 2011.}
+
+\bibitem[Santos e Kassouf 2012]{dos2012avaliaccao}
+\abntrefinfo{Santos e Kassouf}{SANTOS; KASSOUF}{2012}
+{SANTOS, M.~J. dos; KASSOUF, A.~L. Avalia{\c{c}}{\~a}o de impacto do estatuto
+  do desarmamento na criminalidade: Uma abordagem de s{\'e}ries temporais
+  aplicada {\`a} cidade de s{\~a}o paulo/assessing the disarmament statute
+  impact on crime rates: a time series approach applied to s{\~a}o paulo city.
+\emph{Economic Analysis of Law Review}, Universidade Cat{\'o}lica de
+  Bras{\'\i}lia UCB, v.~3, n.~2, p.~307, 2012.}
+
+\bibitem[Saraiva, Conceicao e Franca 2016]{saravia2016cedeplar}
+\abntrefinfo{Saraiva, Conceicao e Franca}{SARAIVA; CONCEICAO; FRANCA}{2016}
+{SARAIVA, M.~V.; CONCEICAO, O.~C.; FRANCA, M. T.~A. \emph{{Os determinantes da
+  criminalidade nos municípios gaúchos: evidências de um modelo
+  econométrico espacial}}. [S.l.]: XVII Seminário sobre a Economia Mineira.
+  CEDEPLAR: Universidade Federal de Minas Gerais., 2016.}
+
+\bibitem[Shiode et al. 2015]{shiode2015space}
+\abntrefinfo{Shiode et al.}{SHIODE et al.}{2015}
+{SHIODE, S. et al. Space-time characteristics of micro-scale crime occurrences:
+  an application of a network-based space-time search window technique for
+  crime incidents in chicago.
+\emph{International Journal of Geographical Information Science}, Taylor \&
+  Francis, v.~29, n.~5, p. 697--719, 2015.}
+
+\bibitem[Sievert et al. 2017]{plotly}
+\abntrefinfo{Sievert et al.}{SIEVERT et al.}{2017}
+{SIEVERT, C. et al. \emph{plotly: Create Interactive Web Graphics via
+  'plotly.js'}.
+[S.l.], 2017. R package version 4.7.1. Dispon{\'\i}vel em:
+  \url{https://CRAN.R-project.org/package=plotly}.}
+
+\bibitem[Silveira e Vieira 2000]{silveira2000relaccao}
+\abntrefinfo{Silveira e Vieira}{SILVEIRA; VIEIRA}{2000}
+{SILVEIRA, C.; VIEIRA, R.~O. Rela{\c{c}}{\~a}o entre o comportamento anual da
+  temperatura m{\'e}dia mensal do ar e o comportamento anual da criminalidade
+  da cidade de pelotas, rs.
+\emph{Pelotas: UFPEL}, 2000.}
+
+\bibitem[Smith 2016]{smith2016}
+\abntrefinfo{Smith}{SMITH}{2016}
+{SMITH, A.~C. {Spring Forward at Your Own Risk: Daylight Saving Time and Fatal
+  Vehicle Crashes}.
+\emph{American Economic Journal: Applied Economics}, v.~8, n.~2, p. 65--91,
+  2016.}
+
+\bibitem[Sontrop 2015]{c3}
+\abntrefinfo{Sontrop}{SONTROP}{2015}
+{SONTROP, H. \emph{C3: A package for R based in c3.js}.
+[S.l.], 2015. R package version 0.0.0.9000.}
+
+\bibitem[Spiegelhalter et al. 1997]{spiegelhalter2002}
+\abntrefinfo{Spiegelhalter et al.}{SPIEGELHALTER et al.}{1997}
+{SPIEGELHALTER, D. et al. {Bayesian approach for nonlinear random effects
+  models}.
+\emph{Biometrics}, v.~53, p. 1239--1252, 1997.}
+
+\bibitem[Stander et al. 1989]{stander1989markov}
+\abntrefinfo{Stander et al.}{STANDER et al.}{1989}
+{STANDER, J. et al. Markov chain analysis and specialization in criminal
+  careers.
+\emph{The British Journal of Criminology}, Oxford University Press, v.~29,
+  n.~4, p. 317--335, 1989.}
+
+\bibitem[Teller 2013]{teller2013data}
+\abntrefinfo{Teller}{TELLER}{2013}
+{TELLER, S. \emph{Data Visualization with D3. js}. [S.l.]: Packt Publishing
+  Ltd, 2013.}
+
+\bibitem[Thistlewaite e Campbell 1960]{thistlewaite1960}
+\abntrefinfo{Thistlewaite e Campbell}{THISTLEWAITE; CAMPBELL}{1960}
+{THISTLEWAITE, D.; CAMPBELL, D. {Regression-discontinuity analysis: an
+  alternative to the ex-post facto experiment}.
+\emph{Journal of Educational Psychology}, v.~51, p. 309--317, 1960.}
+
+\bibitem[Toro, Tigre e Sampaio 2015]{toro2015myocardial}
+\abntrefinfo{Toro, Tigre e Sampaio}{TORO; TIGRE; SAMPAIO}{2015}
+{TORO, W.; TIGRE, R.; SAMPAIO, B. {Daylight Saving Time and incidence of
+  myocardial infarction: Evidence from a regression discontinuity design}.
+\emph{Economics Letters}, v.~136, p.~1--4, 2015.}
+
+\bibitem[Toro, Tigre e Sampaio 2016]{toro2016}
+\abntrefinfo{Toro, Tigre e Sampaio}{TORO; TIGRE; SAMPAIO}{2016}
+{TORO, W.; TIGRE, R.; SAMPAIO, B. {Ambient Light and Homicides}.
+\emph{Disponível em SSRN: http://ssrn.com/abstract=2786452 ou
+  http://dx.doi.org/10.2139/ssrn.2786452}, 2016.}
+
+\bibitem[Vaidyanathan et al. 2017]{htmlwidgets}
+\abntrefinfo{Vaidyanathan et al.}{VAIDYANATHAN et al.}{2017}
+{VAIDYANATHAN, R. et al. \emph{htmlwidgets: HTML Widgets for R}.
+[S.l.], 2017. R package version 0.9. Dispon{\'\i}vel em:
+  \url{https://github.com/ramnathv/htmlwidgets}.}
+
+\bibitem[Waiselfisz 2014]{Waiselfisz2014}
+\abntrefinfo{Waiselfisz}{WAISELFISZ}{2014}
+{WAISELFISZ, J. \emph{{Mapa da Violência 2014: Os jovens do Brasil}}. [S.l.]:
+  Flacso, 2014.}
+
+\bibitem[Waiselfisz 2016]{waiselfisz2016mapa}
+\abntrefinfo{Waiselfisz}{WAISELFISZ}{2016}
+{WAISELFISZ, J.~J. Mapa da viol{\^e}ncia 2016: homic{\'\i}dios por armas de
+  fogo no brasil [internet].
+\emph{Bras{\'\i}lia: FLACSO}, 2016.}
+
+\bibitem[Wickham 2014]{tidy_data}
+\abntrefinfo{Wickham}{WICKHAM}{2014}
+{WICKHAM, H. Tidy data.
+\emph{The Journal of Statistical Software}, v.~59, 2014.
+Dispon{\'\i}vel em: \url{http://www.jstatsoft.org/v59/i10/}.}
+
+\bibitem[Wijk 2005]{van2005value}
+\abntrefinfo{Wijk}{WIJK}{2005}
+{WIJK, J.~J. V. The value of visualization. In:  IEEE. \emph{Visualization,
+  2005. VIS 05. IEEE}. [S.l.], 2005. p. 79--86.}
+
+\bibitem[Wilkinson 2006]{wilkinson2006grammar}
+\abntrefinfo{Wilkinson}{WILKINSON}{2006}
+{WILKINSON, L. \emph{The grammar of graphics}. [S.l.]: Springer Science \&
+  Business Media, 2006.}
+
+\bibitem[Wolff e Makino 2012]{wolff2012}
+\abntrefinfo{Wolff e Makino}{WOLFF; MAKINO}{2012}
+{WOLFF, H.; MAKINO, M. {Extending Becker’s Time Allocation Theory to Model
+  Continuous Time Blocks: Evidence from Daylight Saving Time}.
+\emph{Discussion Paper No. 6787}, Disponível em http://ftp.iza.org/dp6787.pdf,
+  2012.}
+
+\bibitem[Xie 2016]{DT}
+\abntrefinfo{Xie}{XIE}{2016}
+{XIE, Y. \emph{DT: A Wrapper of the JavaScript Library 'DataTables'}.
+[S.l.], 2016. R package version 0.2. Dispon{\'\i}vel em:
+  \url{https://CRAN.R-project.org/package=DT}.}
+
+\bibitem[Zuanazzi e Bartels 2016]{zuanazzi2016}
+\abntrefinfo{Zuanazzi e Bartels}{ZUANAZZI; BARTELS}{2016}
+{ZUANAZZI, P.~T.; BARTELS, M. \emph{{ Estimativas para a população flutuante
+  do Litoral Norte do RS}}. [S.l.]: Porto Alegre: FEE, 2016.}
+
+\end{thebibliography}

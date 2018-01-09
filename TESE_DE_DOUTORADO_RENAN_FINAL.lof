@@ -1,0 +1,65 @@
+\select@language {brazil}
+\contentsline {figure}{\numberline {1.0.1}{\ignorespaces Varia\IeC {\c c}\IeC {\~a}o do PIB trimestral ga\IeC {\'u}cho acumulado em quatro trimestres \IeC {\textemdash } 2003/IV-2017/III (em \%)\relax }}{21}{figure.caption.6}
+\contentsline {figure}{\numberline {1.0.2}{\ignorespaces Taxa de Desemprego mensal da RMPA \IeC {\textemdash } 1992/Jun.-2017/Out. (em \%)\relax }}{21}{figure.caption.7}
+\contentsline {figure}{\numberline {2.2.1}{\ignorespaces Exemplo de Vizinhan\IeC {\c c}a de cinco munic\IeC {\'\i }pios\relax }}{28}{figure.caption.8}
+\contentsline {figure}{\numberline {2.2.2}{\ignorespaces Exemplo de Diferentes Especifica\IeC {\c c}\IeC {\~o}es. (a) Vizinhos de contiguidade de 1\IeC {\textordfeminine } ordem. (b) k-NN de 1\IeC {\textordfeminine } ordem. (c) k-NN de 2\IeC {\textordfeminine } ordem. (d) k-NN de 3\IeC {\textordfeminine } ordem.\relax }}{30}{figure.caption.11}
+\contentsline {figure}{\numberline {2.5.1}{\ignorespaces Evolu\IeC {\c c}\IeC {\~a}o do Homic\IeC {\'\i }dio Doloso no Rio Grande do Sul\relax }}{37}{figure.caption.13}
+\contentsline {figure}{\numberline {2.5.2}{\ignorespaces Evolu\IeC {\c c}\IeC {\~a}o de crimes selecionados no Rio Grande do Sul, 2002-2015\relax }}{38}{figure.caption.14}
+\contentsline {figure}{\numberline {2.5.3}{\ignorespaces Evolu\IeC {\c c}\IeC {\~a}o de homic\IeC {\'\i }dios nos cinco maiores munic\IeC {\'\i }pios\relax }}{40}{figure.caption.15}
+\contentsline {figure}{\numberline {2.5.4}{\ignorespaces Evolu\IeC {\c c}\IeC {\~a}o de crimes selecionados nos cinco maiores munic\IeC {\'\i }pios\relax }}{41}{figure.caption.16}
+\contentsline {figure}{\numberline {2.6.1}{\ignorespaces Rela\IeC {\c c}\IeC {\~a}o entre ocorr\IeC {\^e}ncia estimada pelos modelos do INLA e ocorr\IeC {\^e}ncia bruta (todos os anos e todos os munic\IeC {\'\i }pios)\relax }}{47}{figure.caption.22}
+\contentsline {figure}{\numberline {2.6.2}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o de N\IeC {\'u}mero de Homic\IeC {\'\i }dios de munic\IeC {\'\i }pios selecionados\relax }}{48}{figure.caption.23}
+\contentsline {figure}{\numberline {2.6.3}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o de Latroc\IeC {\'\i }nios de munic\IeC {\'\i }pios selecionados\relax }}{49}{figure.caption.24}
+\contentsline {figure}{\numberline {2.6.4}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o dos \IeC {\'\i }ndices para 10 munic\IeC {\'\i }pios relevantes selecionados. O painel \IeC {\`a} esquerda mostra o ICrime geral, o painel central apresenta o \IeC {\'\i }ndice contra o patrim\IeC {\^o}nio e \IeC {\`a} direita o \IeC {\'\i }ndice contra \IeC {\`a} vida.\relax }}{50}{figure.caption.25}
+\contentsline {figure}{\numberline {2.6.5}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o dos \IeC {\'\i }ndices para 10 munic\IeC {\'\i }pios at\IeC {\'\i }picos selecionados. O painel \IeC {\`a} esquerda mostra o ICrime geral, o painel central apresenta o \IeC {\'\i }ndice contra o patrim\IeC {\^o}nio e \IeC {\`a} direita o \IeC {\'\i }ndice contra \IeC {\`a} vida.\relax }}{51}{figure.caption.26}
+\select@language {english}
+\contentsline {figure}{\numberline {3.2.1}{\ignorespaces Representation of a sharp intervention\relax }}{61}{figure.caption.30}
+\contentsline {figure}{\numberline {3.3.1}{\ignorespaces Homicide rates stratified per year in Rio Grande do Sul\relax }}{64}{figure.caption.32}
+\contentsline {figure}{\numberline {3.3.2}{\ignorespaces General homicide rates in Rio Grande do Sul only in a period close to the entry of Daylight Saving Time\relax }}{65}{figure.caption.33}
+\contentsline {figure}{\numberline {3.3.3}{\ignorespaces Homicide rates for months of the year in Rio Grande do Sul\relax }}{66}{figure.caption.34}
+\contentsline {figure}{\numberline {3.3.4}{\ignorespaces Homicide rates for days of the week in Rio Grande do Sul\relax }}{67}{figure.caption.35}
+\contentsline {figure}{\numberline {3.3.5}{\ignorespaces Homicide rates by time of occurrence in Rio Grande do Sul\relax }}{68}{figure.caption.36}
+\contentsline {figure}{\numberline {3.3.6}{\ignorespaces Homicide rates by average temperature in Rio Grande do Sul\relax }}{69}{figure.caption.37}
+\contentsline {figure}{\numberline {3.3.7}{\ignorespaces Regression Discontinuity at the entrance of DST in models without covariables.\relax }}{72}{figure.caption.39}
+\contentsline {figure}{\numberline {3.3.8}{\ignorespaces Regression Discontinuity at the end of DST in models without covariates.\relax }}{76}{figure.caption.43}
+\contentsline {figure}{\numberline {3.4.1}{\ignorespaces Start of DST with \textit {demean} method\relax }}{80}{figure.caption.46}
+\contentsline {figure}{\numberline {3.4.2}{\ignorespaces End of DST with \textit {demean} method\relax }}{81}{figure.caption.47}
+\contentsline {figure}{\numberline {3.4.3}{\ignorespaces Entry of the DST with \textit {demean} method - Most affected hours\relax }}{84}{figure.caption.50}
+\contentsline {figure}{\numberline {3.4.4}{\ignorespaces End of the DST with \textit {demean} method - Most affected hours\relax }}{85}{figure.caption.51}
+\contentsline {figure}{\numberline {3.A.1}{\ignorespaces Homicide rate and pluviometric precipitation in Rio Grande do Sul\relax }}{90}{figure.caption.55}
+\contentsline {figure}{\numberline {3.A.2}{\ignorespaces Homicide rate and wind speed in Rio Grande do Sul\relax }}{91}{figure.caption.56}
+\contentsline {figure}{\numberline {3.B.1}{\ignorespaces Effect of temperature discontinuity at the start of the DST in RS\relax }}{92}{figure.caption.57}
+\contentsline {figure}{\numberline {3.B.2}{\ignorespaces Effect of pluviometric precipitation discontinuity at the start of the DST in RS\relax }}{93}{figure.caption.58}
+\contentsline {figure}{\numberline {3.B.3}{\ignorespaces Effect of wind speed at the start of the DST in RS\relax }}{94}{figure.caption.59}
+\contentsline {figure}{\numberline {3.C.1}{\ignorespaces Effect of temperature discontinuity at the end of the DST in RS\relax }}{95}{figure.caption.60}
+\contentsline {figure}{\numberline {3.C.2}{\ignorespaces Effect of pluviometric precipitation discontinuity at the end of the DST in RS\relax }}{96}{figure.caption.61}
+\contentsline {figure}{\numberline {3.C.3}{\ignorespaces Effect of wind speed discontinuity at the end of the DST in RS\relax }}{97}{figure.caption.62}
+\select@language {brazil}
+\contentsline {figure}{\numberline {4.1.1}{\ignorespaces Dados, estat\IeC {\'\i }sticas e gr\IeC {\'a}ficos do Quarteto de Anscombe\relax }}{99}{figure.caption.63}
+\contentsline {figure}{\numberline {4.3.1}{\ignorespaces Exemplo de um aplicativo feito em Shiny.\relax }}{104}{figure.caption.64}
+\contentsline {figure}{\numberline {4.3.2}{\ignorespaces Resultado de um aplicativo gen\IeC {\'e}rico constru\IeC {\'\i }do\relax }}{106}{figure.caption.65}
+\contentsline {figure}{\numberline {4.5.1}{\ignorespaces S\IeC {\'e}ries Temporais geradas pelo CrimeVis\relax }}{109}{figure.caption.66}
+\contentsline {figure}{\numberline {4.5.2}{\ignorespaces Exemplo de rela\IeC {\c c}\IeC {\~a}o entre Homic\IeC {\'\i }dio Doloso e Furto com destaque em um grupo de munic\IeC {\'\i }pios\relax }}{112}{figure.caption.67}
+\contentsline {figure}{\numberline {4.5.3}{\ignorespaces Mapas gerados pelo CrimeVis\relax }}{114}{figure.caption.68}
+\contentsline {figure}{\numberline {4.5.4}{\ignorespaces Exemplo de \textit {treemap} de Roubo de Ve\IeC {\'\i }culos em 2016\relax }}{115}{figure.caption.69}
+\contentsline {figure}{\numberline {5.3.1}{\ignorespaces Acoplamento dos modelos Markovianos no CrimeVis\relax }}{124}{figure.caption.72}
+\contentsline {figure}{\numberline {5.4.1}{\ignorespaces Transi\IeC {\c c}\IeC {\~a}o Espa\IeC {\c c}o-Temporal markoviana do Roubo de Ve\IeC {\'\i }culos entre 2002 e 2016\relax }}{126}{figure.caption.74}
+\contentsline {figure}{\numberline {5.4.2}{\ignorespaces Evolu\IeC {\c c}\IeC {\~a}o da frota de ve\IeC {\'\i }culos de passageiros por 100 habitantes no RS entre 2002 e 2016\relax }}{129}{figure.caption.79}
+\contentsline {figure}{\numberline {5.A.1}{\ignorespaces Transi\IeC {\c c}\IeC {\~a}o Espa\IeC {\c c}o-Temporal markoviana do Roubo de Ve\IeC {\'\i }culos entre 2002 e 2009\relax }}{136}{figure.caption.81}
+\contentsline {figure}{\numberline {5.A.2}{\ignorespaces Transi\IeC {\c c}\IeC {\~a}o Espa\IeC {\c c}o-Temporal markoviana do Roubo de Ve\IeC {\'\i }culos entre 2009 e 2016\relax }}{137}{figure.caption.82}
+\contentsline {figure}{\numberline {5.A.3}{\ignorespaces Transi\IeC {\c c}\IeC {\~a}o Espa\IeC {\c c}o-Temporal markoviana do Roubo de Ve\IeC {\'\i }culos entre 2015 e 2016\relax }}{137}{figure.caption.83}
+\contentsline {figure}{\numberline {5.A.4}{\ignorespaces Transi\IeC {\c c}\IeC {\~a}o Espa\IeC {\c c}o-Temporal markoviana do Homic\IeC {\'\i }dio Doloso entre 2002 e 2016\relax }}{138}{figure.caption.84}
+\contentsline {figure}{\numberline {5.A.5}{\ignorespaces Transi\IeC {\c c}\IeC {\~a}o Espa\IeC {\c c}o-Temporal markoviana do Homic\IeC {\'\i }dio Doloso entre 2002 e 2009\relax }}{138}{figure.caption.85}
+\contentsline {figure}{\numberline {5.A.6}{\ignorespaces Transi\IeC {\c c}\IeC {\~a}o Espa\IeC {\c c}o-Temporal markoviana do Homic\IeC {\'\i }dio Doloso entre 2009 e 2016\relax }}{139}{figure.caption.86}
+\contentsline {figure}{\numberline {5.A.7}{\ignorespaces Transi\IeC {\c c}\IeC {\~a}o Espa\IeC {\c c}o-Temporal markoviana do Homic\IeC {\'\i }dio Doloso entre 2015 e 2016\relax }}{139}{figure.caption.87}
+\contentsline {figure}{\numberline {5.A.8}{\ignorespaces Transi\IeC {\c c}\IeC {\~a}o Espa\IeC {\c c}o-Temporal markoviana de Delitos Relacionados \IeC {\`a} Armas e Muni\IeC {\c c}\IeC {\~o}es entre 2002 e 2016\relax }}{140}{figure.caption.88}
+\contentsline {figure}{\numberline {5.A.9}{\ignorespaces Evolu\IeC {\c c}\IeC {\~a}o da Taxa dos Delitos Relacionados \IeC {\`a} Armas e Muni\IeC {\c c}\IeC {\~o}es do RS e dos seus cinco maiores munic\IeC {\'\i }pios\relax }}{140}{figure.caption.89}
+\contentsline {figure}{\numberline {5.A.10}{\ignorespaces Transi\IeC {\c c}\IeC {\~a}o Espa\IeC {\c c}o-Temporal markoviana de Delitos Relacionados \IeC {\`a} Armas e Muni\IeC {\c c}\IeC {\~o}es entre 2002 e 2003\relax }}{140}{figure.caption.90}
+\contentsline {figure}{\numberline {5.A.11}{\ignorespaces Transi\IeC {\c c}\IeC {\~a}o Espa\IeC {\c c}o-Temporal markoviana de Delitos Relacionados \IeC {\`a} Armas e Muni\IeC {\c c}\IeC {\~o}es entre 2003 e 2004\relax }}{141}{figure.caption.91}
+\contentsline {figure}{\numberline {5.A.12}{\ignorespaces Transi\IeC {\c c}\IeC {\~a}o Espa\IeC {\c c}o-Temporal markoviana de Delitos Relacionados \IeC {\`a} Armas e Muni\IeC {\c c}\IeC {\~o}es entre 2004 e 2005\relax }}{141}{figure.caption.92}
+\contentsline {figure}{\numberline {5.A.13}{\ignorespaces Transi\IeC {\c c}\IeC {\~a}o Espa\IeC {\c c}o-Temporal markoviana de Tr\IeC {\'a}fico de Entorpecentes entre 2002 e 2016\relax }}{142}{figure.caption.93}
+\contentsline {figure}{\numberline {5.A.14}{\ignorespaces Transi\IeC {\c c}\IeC {\~a}o Espa\IeC {\c c}o-Temporal markoviana de Tr\IeC {\'a}fico de Entorpecentes entre 2002 e 2009\relax }}{142}{figure.caption.94}
+\contentsline {figure}{\numberline {5.A.15}{\ignorespaces Transi\IeC {\c c}\IeC {\~a}o Espa\IeC {\c c}o-Temporal markoviana de Tr\IeC {\'a}fico de Entorpecentes entre 2009 e 2016\relax }}{143}{figure.caption.95}
+\contentsline {figure}{\numberline {5.A.16}{\ignorespaces Transi\IeC {\c c}\IeC {\~a}o Espa\IeC {\c c}o-Temporal markoviana do Furto entre 2002 e 2016\relax }}{143}{figure.caption.96}
+\contentsline {figure}{\numberline {5.A.17}{\ignorespaces Transi\IeC {\c c}\IeC {\~a}o Espa\IeC {\c c}o-Temporal markoviana do Latroc\IeC {\'\i }nio entre 2002 e 2016\relax }}{144}{figure.caption.97}
+\contentsline {figure}{\numberline {5.A.18}{\ignorespaces Transi\IeC {\c c}\IeC {\~a}o Espa\IeC {\c c}o-Temporal markoviana da Extors\IeC {\~a}o Mediante Sequestro entre 2002 e 2016\relax }}{144}{figure.caption.98}

@@ -1,0 +1,94 @@
+\select@language {brazil}
+\contentsline {table}{\numberline {2.2.1}{\ignorespaces Exemplo de Matriz de Vizinhan\IeC {\c c}a\relax }}{28}{table.caption.9}
+\contentsline {table}{\numberline {2.2.2}{\ignorespaces Exemplo de Matriz de Vizinhan\IeC {\c c}a Padronizada\relax }}{29}{table.caption.10}
+\contentsline {table}{\numberline {2.3.1}{\ignorespaces Penas dos crimes considerados no \IeC {\'\i }ndice\relax }}{35}{table.caption.12}
+\contentsline {table}{\numberline {2.5.1}{\ignorespaces Estat\IeC {\'\i }sticas Descritivas de crimes selecionados, 2015\relax }}{39}{table.caption.17}
+\contentsline {table}{\numberline {2.5.2}{\ignorespaces Ranking municipal de taxas criminais - 2015\relax }}{39}{table.caption.18}
+\contentsline {table}{\numberline {2.5.3}{\ignorespaces I de Moran calculado para diferentes crimes, para anos selecionados e diferentes especifica\IeC {\c c}\IeC {\~o}es da matriz de vizinhan\IeC {\c c}a\relax }}{44}{table.caption.19}
+\contentsline {table}{\numberline {2.6.1}{\ignorespaces LPML para diferentes especifica\IeC {\c c}\IeC {\~o}es e diferentes matrizes\relax }}{45}{table.caption.20}
+\contentsline {table}{\numberline {2.6.2}{\ignorespaces DIC para diferentes especifica\IeC {\c c}\IeC {\~o}es e diferentes matrizes\relax }}{45}{table.caption.21}
+\contentsline {table}{\numberline {2.6.3}{\ignorespaces Rankings municipais do ICrime para anos selecionados: os 10 maiores e os 10 menores munic\IeC {\'\i }pios\relax }}{50}{table.caption.27}
+\contentsline {table}{\numberline {2.6.4}{\ignorespaces Rankings municipais do \IeC {\'I}ndice Criminal contra a vida para anos selecionados: os 10 maiores e os 10 menores munic\IeC {\'\i }pios\relax }}{51}{table.caption.28}
+\select@language {english}
+\contentsline {table}{\numberline {3.2.1}{\ignorespaces Code description of ICD-10 used\relax }}{58}{table.caption.29}
+\contentsline {table}{\numberline {3.2.2}{\ignorespaces DST dates implemented\relax }}{63}{table.caption.31}
+\contentsline {table}{\numberline {3.3.1}{\ignorespaces Local Effects of DST entry for all years and models\relax }}{71}{table.caption.38}
+\contentsline {table}{\numberline {3.3.2}{\ignorespaces Effects of climate covariates every year and models at the entrance of DST\relax }}{73}{table.caption.40}
+\contentsline {table}{\numberline {3.3.3}{\ignorespaces Weekdays effect on the entry of DST\relax }}{74}{table.caption.41}
+\contentsline {table}{\numberline {3.3.4}{\ignorespaces Local Effects of DST ending for all years and models\relax }}{75}{table.caption.42}
+\contentsline {table}{\numberline {3.3.5}{\ignorespaces Effects of climate covariates every year and models at the exit of DST\relax }}{77}{table.caption.44}
+\contentsline {table}{\numberline {3.3.6}{\ignorespaces Weekdays effect on the end of DST\relax }}{78}{table.caption.45}
+\contentsline {table}{\numberline {3.4.1}{\ignorespaces Results of DST entry using alternative bandwidth\relax }}{82}{table.caption.48}
+\contentsline {table}{\numberline {3.4.2}{\ignorespaces Results of DST end using alternative bandwidth\relax }}{83}{table.caption.49}
+\contentsline {table}{\numberline {3.4.3}{\ignorespaces Local effects of the DST start for all years and models - All occurrence locations\relax }}{86}{table.caption.52}
+\contentsline {table}{\numberline {3.4.4}{\ignorespaces Local effects of the DST end for all years and models - All occurrence locations\relax }}{87}{table.caption.53}
+\select@language {brazil}
+\contentsline {table}{\numberline {5.2.1}{\ignorespaces Exemplo de Matriz de Transi\IeC {\c c}\IeC {\~a}o Temporal\relax }}{120}{table.caption.70}
+\contentsline {table}{\numberline {5.2.2}{\ignorespaces Exemplo de Matriz de Transi\IeC {\c c}\IeC {\~a}o Espa\IeC {\c c}o-Temporal\relax }}{121}{table.caption.71}
+\contentsline {table}{\numberline {5.4.1}{\ignorespaces Frequ\IeC {\^e}ncias de munic\IeC {\'\i }pios que apresentaram crimes em anos selecionados\relax }}{125}{table.caption.73}
+\contentsline {table}{\numberline {5.4.2}{\ignorespaces Probabilidades de Transi\IeC {\c c}\IeC {\~a}o Temporal do Roubo de Ve\IeC {\'\i }culos entre 2002 e 2016\relax }}{126}{table.caption.75}
+\contentsline {table}{\numberline {5.4.3}{\ignorespaces Raz\IeC {\~o}es de Chance Temporais do Roubo de Ve\IeC {\'\i }culos entre 2002 e 2016\relax }}{127}{table.caption.76}
+\contentsline {table}{\numberline {5.4.4}{\ignorespaces Probabilidades de Transi\IeC {\c c}\IeC {\~a}o Espa\IeC {\c c}o-Temporal do Roubo de Ve\IeC {\'\i }culos entre 2002 e 2016\relax }}{127}{table.caption.77}
+\contentsline {table}{\numberline {5.4.5}{\ignorespaces Raz\IeC {\~o}es de Chance Espa\IeC {\c c}o-Temporais do Roubo de Ve\IeC {\'\i }culos entre 2002 e 2016\relax }}{128}{table.caption.78}
+\contentsline {table}{\numberline {5.B.1}{\ignorespaces Probabilidades de Transi\IeC {\c c}\IeC {\~a}o Temporal do Roubo de Ve\IeC {\'\i }culos entre 2002 e 2009\relax }}{144}{table.caption.99}
+\contentsline {table}{\numberline {5.B.2}{\ignorespaces Raz\IeC {\~o}es de Chance Temporais do Roubo de Ve\IeC {\'\i }culos entre 2002 e 2009\relax }}{145}{table.caption.100}
+\contentsline {table}{\numberline {5.B.3}{\ignorespaces Probabilidades de Transi\IeC {\c c}\IeC {\~a}o Espa\IeC {\c c}o-Temporal do Roubo de Ve\IeC {\'\i }culos entre 2002 e 2009\relax }}{145}{table.caption.101}
+\contentsline {table}{\numberline {5.B.4}{\ignorespaces Raz\IeC {\~o}es de Chance Espa\IeC {\c c}o-Temporais do Roubo de Ve\IeC {\'\i }culos entre 2002 e 2009\relax }}{145}{table.caption.102}
+\contentsline {table}{\numberline {5.B.5}{\ignorespaces Probabilidades de Transi\IeC {\c c}\IeC {\~a}o Temporal do Roubo de Ve\IeC {\'\i }culos entre 2009 e 2016\relax }}{145}{table.caption.103}
+\contentsline {table}{\numberline {5.B.6}{\ignorespaces Raz\IeC {\~o}es de Chance Temporais do Roubo de Ve\IeC {\'\i }culos entre 2009 e 2016\relax }}{145}{table.caption.104}
+\contentsline {table}{\numberline {5.B.7}{\ignorespaces Probabilidades de Transi\IeC {\c c}\IeC {\~a}o Espa\IeC {\c c}o-Temporal do Roubo de Ve\IeC {\'\i }culos entre 2009 e 2016\relax }}{146}{table.caption.105}
+\contentsline {table}{\numberline {5.B.8}{\ignorespaces Raz\IeC {\~o}es de Chance Espa\IeC {\c c}o-Temporais do Roubo de Ve\IeC {\'\i }culos entre 2009 e 2016\relax }}{146}{table.caption.106}
+\contentsline {table}{\numberline {5.B.9}{\ignorespaces Probabilidades de Transi\IeC {\c c}\IeC {\~a}o Temporal do Roubo de Ve\IeC {\'\i }culos entre 2015 e 2016\relax }}{146}{table.caption.107}
+\contentsline {table}{\numberline {5.B.10}{\ignorespaces Raz\IeC {\~o}es de Chance Temporais do Roubo de Ve\IeC {\'\i }culos entre 2015 e 2016\relax }}{146}{table.caption.108}
+\contentsline {table}{\numberline {5.B.11}{\ignorespaces Probabilidades de Transi\IeC {\c c}\IeC {\~a}o Espa\IeC {\c c}o-Temporal do Roubo de Ve\IeC {\'\i }culos entre 2015 e 2016\relax }}{147}{table.caption.109}
+\contentsline {table}{\numberline {5.B.12}{\ignorespaces Raz\IeC {\~o}es de Chance Espa\IeC {\c c}o-Temporais do Roubo de Ve\IeC {\'\i }culos entre 2015 e 2016\relax }}{147}{table.caption.110}
+\contentsline {table}{\numberline {5.B.13}{\ignorespaces Probabilidades de Transi\IeC {\c c}\IeC {\~a}o Temporal do Homic\IeC {\'\i }dio Doloso entre 2002 e 2016\relax }}{147}{table.caption.111}
+\contentsline {table}{\numberline {5.B.14}{\ignorespaces Raz\IeC {\~o}es de Chance Temporais do Homic\IeC {\'\i }dio Doloso entre 2002 e 2016\relax }}{147}{table.caption.112}
+\contentsline {table}{\numberline {5.B.15}{\ignorespaces Probabilidades de Transi\IeC {\c c}\IeC {\~a}o Espa\IeC {\c c}o-Temporal do Homic\IeC {\'\i }dio entre 2002 e 2016\relax }}{148}{table.caption.113}
+\contentsline {table}{\numberline {5.B.16}{\ignorespaces Raz\IeC {\~o}es de Chance Espa\IeC {\c c}o-Temporais do Homic\IeC {\'\i }dio Doloso entre 2002 e 2016\relax }}{148}{table.caption.114}
+\contentsline {table}{\numberline {5.B.17}{\ignorespaces Probabilidades de Transi\IeC {\c c}\IeC {\~a}o Temporal do Homic\IeC {\'\i }dio Doloso entre 2002 e 2009\relax }}{148}{table.caption.115}
+\contentsline {table}{\numberline {5.B.18}{\ignorespaces Raz\IeC {\~o}es de Chance Temporais do Homic\IeC {\'\i }dio Doloso entre 2002 e 2009\relax }}{148}{table.caption.116}
+\contentsline {table}{\numberline {5.B.19}{\ignorespaces Probabilidades de Transi\IeC {\c c}\IeC {\~a}o Espa\IeC {\c c}o-Temporal do Homic\IeC {\'\i }dio entre 2002 e 2009\relax }}{149}{table.caption.117}
+\contentsline {table}{\numberline {5.B.20}{\ignorespaces Raz\IeC {\~o}es de Chance Espa\IeC {\c c}o-Temporais do Homic\IeC {\'\i }dio Doloso entre 2002 e 2009\relax }}{149}{table.caption.118}
+\contentsline {table}{\numberline {5.B.21}{\ignorespaces Probabilidades de Transi\IeC {\c c}\IeC {\~a}o Temporal do Homic\IeC {\'\i }dio Doloso entre 2009 e 2016\relax }}{149}{table.caption.119}
+\contentsline {table}{\numberline {5.B.22}{\ignorespaces Raz\IeC {\~o}es de Chance Temporais do Homic\IeC {\'\i }dio Doloso entre 2009 e 2016\relax }}{149}{table.caption.120}
+\contentsline {table}{\numberline {5.B.23}{\ignorespaces Probabilidades de Transi\IeC {\c c}\IeC {\~a}o Espa\IeC {\c c}o-Temporal do Homic\IeC {\'\i }dio entre 2009 e 2016\relax }}{150}{table.caption.121}
+\contentsline {table}{\numberline {5.B.24}{\ignorespaces Raz\IeC {\~o}es de Chance Espa\IeC {\c c}o-Temporais do Homic\IeC {\'\i }dio Doloso entre 2009 e 2016\relax }}{150}{table.caption.122}
+\contentsline {table}{\numberline {5.B.25}{\ignorespaces Probabilidades de Transi\IeC {\c c}\IeC {\~a}o Temporal do Homic\IeC {\'\i }dio Doloso entre 2015 e 2016\relax }}{150}{table.caption.123}
+\contentsline {table}{\numberline {5.B.26}{\ignorespaces Raz\IeC {\~o}es de Chance Temporais do Homic\IeC {\'\i }dio Doloso entre 2015 e 2016\relax }}{150}{table.caption.124}
+\contentsline {table}{\numberline {5.B.27}{\ignorespaces Probabilidades de Transi\IeC {\c c}\IeC {\~a}o Espa\IeC {\c c}o-Temporal do Homic\IeC {\'\i }dio entre 2015 e 2016\relax }}{151}{table.caption.125}
+\contentsline {table}{\numberline {5.B.28}{\ignorespaces Raz\IeC {\~o}es de Chance Espa\IeC {\c c}o-Temporais do Homic\IeC {\'\i }dio Doloso entre 2015 e 2016\relax }}{151}{table.caption.126}
+\contentsline {table}{\numberline {5.B.29}{\ignorespaces Probabilidades de Transi\IeC {\c c}\IeC {\~a}o Temporal de Delitos Relacionados \IeC {\`a} Armas e Muni\IeC {\c c}\IeC {\~o}es entre 2002 e 2016\relax }}{151}{table.caption.127}
+\contentsline {table}{\numberline {5.B.30}{\ignorespaces Raz\IeC {\~o}es de Chance Temporais de Delitos Relacionados \IeC {\`a} Armas e Muni\IeC {\c c}\IeC {\~o}es entre 2002 e 2016\relax }}{151}{table.caption.128}
+\contentsline {table}{\numberline {5.B.31}{\ignorespaces Probabilidades de Transi\IeC {\c c}\IeC {\~a}o Espa\IeC {\c c}o-Temporal de Delitos Relacionados \IeC {\`a} Armas e Muni\IeC {\c c}\IeC {\~o}es entre 2002 e 2016\relax }}{152}{table.caption.129}
+\contentsline {table}{\numberline {5.B.32}{\ignorespaces Raz\IeC {\~o}es de Chance Espa\IeC {\c c}o-Temporais de Delitos Relacionados \IeC {\`a} Armas e Muni\IeC {\c c}\IeC {\~o}es entre 2002 e 2016\relax }}{152}{table.caption.130}
+\contentsline {table}{\numberline {5.B.33}{\ignorespaces Probabilidades de Transi\IeC {\c c}\IeC {\~a}o Temporal de Delitos Relacionados \IeC {\`a} Armas e Muni\IeC {\c c}\IeC {\~o}es entre 2002 e 2003\relax }}{152}{table.caption.131}
+\contentsline {table}{\numberline {5.B.34}{\ignorespaces Raz\IeC {\~o}es de Chance Temporais de Delitos Relacionados \IeC {\`a} Armas e Muni\IeC {\c c}\IeC {\~o}es entre 2002 e 2003\relax }}{152}{table.caption.132}
+\contentsline {table}{\numberline {5.B.35}{\ignorespaces Probabilidades de Transi\IeC {\c c}\IeC {\~a}o Espa\IeC {\c c}o-Temporal de Delitos Relacionados \IeC {\`a} Armas e Muni\IeC {\c c}\IeC {\~o}es entre 2002 e 2003\relax }}{153}{table.caption.133}
+\contentsline {table}{\numberline {5.B.36}{\ignorespaces Raz\IeC {\~o}es de Chance Espa\IeC {\c c}o-Temporais de Delitos Relacionados \IeC {\`a} Armas e Muni\IeC {\c c}\IeC {\~o}es entre 2002 e 2003\relax }}{153}{table.caption.134}
+\contentsline {table}{\numberline {5.B.37}{\ignorespaces Probabilidades de Transi\IeC {\c c}\IeC {\~a}o Temporal de Delitos Relacionados \IeC {\`a} Armas e Muni\IeC {\c c}\IeC {\~o}es entre 2003 e 2004\relax }}{153}{table.caption.135}
+\contentsline {table}{\numberline {5.B.38}{\ignorespaces Raz\IeC {\~o}es de Chance Temporais de Delitos Relacionados \IeC {\`a} Armas e Muni\IeC {\c c}\IeC {\~o}es entre 2003 e 2004\relax }}{153}{table.caption.136}
+\contentsline {table}{\numberline {5.B.39}{\ignorespaces Probabilidades de Transi\IeC {\c c}\IeC {\~a}o Espa\IeC {\c c}o-Temporal de Delitos Relacionados \IeC {\`a} Armas e Muni\IeC {\c c}\IeC {\~o}es entre 2003 e 2004\relax }}{154}{table.caption.137}
+\contentsline {table}{\numberline {5.B.40}{\ignorespaces Raz\IeC {\~o}es de Chance Espa\IeC {\c c}o-Temporais de Delitos Relacionados \IeC {\`a} Armas e Muni\IeC {\c c}\IeC {\~o}es entre 2003 e 2004\relax }}{154}{table.caption.138}
+\contentsline {table}{\numberline {5.B.41}{\ignorespaces Probabilidades de Transi\IeC {\c c}\IeC {\~a}o Temporal de Delitos Relacionados \IeC {\`a} Armas e Muni\IeC {\c c}\IeC {\~o}es entre 2004 e 2005\relax }}{154}{table.caption.139}
+\contentsline {table}{\numberline {5.B.42}{\ignorespaces Raz\IeC {\~o}es de Chance Temporais de Delitos Relacionados \IeC {\`a} Armas e Muni\IeC {\c c}\IeC {\~o}es entre 2004 e 2005\relax }}{154}{table.caption.140}
+\contentsline {table}{\numberline {5.B.43}{\ignorespaces Probabilidades de Transi\IeC {\c c}\IeC {\~a}o Temporal de Tr\IeC {\'a}fico de Entorpecentes entre 2002 e 2016\relax }}{154}{table.caption.141}
+\contentsline {table}{\numberline {5.B.44}{\ignorespaces Raz\IeC {\~o}es de Chance Temporais de Tr\IeC {\'a}fico de Entorpecentes entre 2002 e 2016\relax }}{155}{table.caption.142}
+\contentsline {table}{\numberline {5.B.45}{\ignorespaces Probabilidades de Transi\IeC {\c c}\IeC {\~a}o Espa\IeC {\c c}o-Temporal de Tr\IeC {\'a}fico de Entorpecentes entre 2002 e 2016\relax }}{155}{table.caption.143}
+\contentsline {table}{\numberline {5.B.46}{\ignorespaces Raz\IeC {\~o}es de Chance Espa\IeC {\c c}o-Temporais de Tr\IeC {\'a}fico de Entorpecentes entre 2002 e 2016\relax }}{155}{table.caption.144}
+\contentsline {table}{\numberline {5.B.47}{\ignorespaces Probabilidades de Transi\IeC {\c c}\IeC {\~a}o Temporal de Tr\IeC {\'a}fico de Entorpecentes entre 2002 e 2009\relax }}{155}{table.caption.145}
+\contentsline {table}{\numberline {5.B.48}{\ignorespaces Raz\IeC {\~o}es de Chance Temporais de Tr\IeC {\'a}fico de Entorpecentes entre 2002 e 2009\relax }}{156}{table.caption.146}
+\contentsline {table}{\numberline {5.B.49}{\ignorespaces Probabilidades de Transi\IeC {\c c}\IeC {\~a}o Espa\IeC {\c c}o-Temporal de Tr\IeC {\'a}fico de Entorpecentes entre 2002 e 2009\relax }}{156}{table.caption.147}
+\contentsline {table}{\numberline {5.B.50}{\ignorespaces Raz\IeC {\~o}es de Chance Espa\IeC {\c c}o-Temporais de Tr\IeC {\'a}fico de Entorpecentes entre 2002 e 2009\relax }}{156}{table.caption.148}
+\contentsline {table}{\numberline {5.B.51}{\ignorespaces Probabilidades de Transi\IeC {\c c}\IeC {\~a}o Temporal de Tr\IeC {\'a}fico de Entorpecentes entre 2009 e 2016\relax }}{156}{table.caption.149}
+\contentsline {table}{\numberline {5.B.52}{\ignorespaces Raz\IeC {\~o}es de Chance Temporais de Tr\IeC {\'a}fico de Entorpecentes entre 2009 e 2016\relax }}{157}{table.caption.150}
+\contentsline {table}{\numberline {5.B.53}{\ignorespaces Probabilidades de Transi\IeC {\c c}\IeC {\~a}o Espa\IeC {\c c}o-Temporal de Tr\IeC {\'a}fico de Entorpecentes entre 2009 e 2016\relax }}{157}{table.caption.151}
+\contentsline {table}{\numberline {5.B.54}{\ignorespaces Raz\IeC {\~o}es de Chance Espa\IeC {\c c}o-Temporais de Tr\IeC {\'a}fico de Entorpecentes entre 2009 e 2016\relax }}{157}{table.caption.152}
+\contentsline {table}{\numberline {5.B.55}{\ignorespaces Probabilidades de Transi\IeC {\c c}\IeC {\~a}o Temporal do Latroc\IeC {\'\i }nio entre 2002 e 2016\relax }}{157}{table.caption.153}
+\contentsline {table}{\numberline {5.B.56}{\ignorespaces Raz\IeC {\~o}es de Chance Temporais do Latroc\IeC {\'\i }nio entre 2002 e 2016\relax }}{157}{table.caption.154}
+\contentsline {table}{\numberline {5.B.57}{\ignorespaces Probabilidades de Transi\IeC {\c c}\IeC {\~a}o Espa\IeC {\c c}o-Temporal do Latroc\IeC {\'\i }nio entre 2002 e 2016\relax }}{158}{table.caption.155}
+\contentsline {table}{\numberline {5.B.58}{\ignorespaces Raz\IeC {\~o}es de Chance Espa\IeC {\c c}o-Temporais do Latroc\IeC {\'\i }nio entre 2002 e 2016\relax }}{158}{table.caption.156}
+\contentsline {table}{\numberline {5.B.59}{\ignorespaces Probabilidades de Transi\IeC {\c c}\IeC {\~a}o Temporal da Extors\IeC {\~a}o Mediante Sequestro entre 2002 e 2016\relax }}{158}{table.caption.157}
+\contentsline {table}{\numberline {5.B.60}{\ignorespaces Raz\IeC {\~o}es de Chance Temporais da Extors\IeC {\~a}o Mediante Sequestro entre 2002 e 2016\relax }}{158}{table.caption.158}
+\contentsline {table}{\numberline {5.B.61}{\ignorespaces Probabilidades de Transi\IeC {\c c}\IeC {\~a}o Espa\IeC {\c c}o-Temporal da Extors\IeC {\~a}o Mediante Sequestro entre 2002 e 2016\relax }}{159}{table.caption.159}
+\contentsline {table}{\numberline {5.B.62}{\ignorespaces Raz\IeC {\~o}es de Chance Espa\IeC {\c c}o-Temporais da Extors\IeC {\~a}o Mediante Sequestro entre 2002 e 2016\relax }}{159}{table.caption.160}
