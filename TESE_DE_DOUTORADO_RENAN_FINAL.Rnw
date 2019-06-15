@@ -186,7 +186,7 @@
 
 \begin{document}
 
-\includepdf[pages={1}]{Capa_Tese_Renan.pdf}
+\includepdf[pages={1}]{misc/Capa_Tese_Renan.pdf}
 %\includepdf[pages={4}]{ata_aprovacao.pdf}
 
 \SweaveOpts{concordance=TRUE}
@@ -195,7 +195,7 @@
 %\imprimircapa
 \imprimirfolhaderosto*
 
-\includepdf[pages={1}]{ficha_catalografica_puc.pdf}
+\includepdf[pages={1}]{misc/ficha_catalografica_puc.pdf}
 %\begin{fichacatalografica}
 %	\vspace*{\fill}					% Posição vertical
 %	\hrule							% Linha horizontal
@@ -233,7 +233,7 @@
 %	\hrule
 %\end{fichacatalografica}
 
-\includepdf[pages={1}]{ata_aprovacao.pdf}
+\includepdf[pages={1}]{misc/ata_aprovacao.pdf}
 %\begin{folhadeaprovacao}
 %
 %  \begin{center}
@@ -289,8 +289,6 @@
 Primeiramente, não poderia deixar de agradecer minha família que sempre deu todo o suporte necessário para eu alcançar meus objetivos. Trabalhar, fazer disciplinas e uma tese no doutorado sempre se configuraram um grande desafio de conciliação do tempo. Por muitas vezes tive que me fazer ausente devido aos compromissos acadêmicos, mas acredito que este investimento será convertido em coisas boas no futuro. 
 
 Desde a formação do cérebro, através do leite materno, o papel da minha mãe na minha criação foi imprenscindível, além do amor e compaixão. Com relação ao meu pai, sempre presente e astuto, tive sempre muitos ensinamentos e devo a ele a carga genética voltada para a área de exatas. A parceria com meu irmão sempre foi importante ao longo desses anos. Todos vocês sempre desempenharam um papel fundamental na minha formação e eu devo tudo a vocês por ser quem eu sou. Amo todos vocês!
-
-Em segundo lugar, agradeço imensamente a minha grande companheira Carol que me apoiou e caminhou ao meu lado durante todos os anos do meu doutorado desde a minha aprovação até o momento da defesa. Sem sombra de dúvidas, o seu companheirismo, carisma e amor trazem uma paz imensurável. Obrigado por ser essa pessoa tão especial!
 
 Não posso deixar de agradecer também ao corpo docente do Programa de Pós-Graduação em Economia do Desenvolvimento (PPGE) da PUCRS. Tendo em vista o meu background estatístico e tendo que encarar um doutorado em economia, tive a sorte de ter grandes professores desde as disciplinas mais introdutórias quanto as mais avançadas. Em especial, agradeço imensamente ao meu orientador Adelar Fochezatto que desde a época em que o conheci como presidente da Fundação de Economia e Estatística (FEE) já se mostrava uma pessoa excepcional de fácil convivência e, acima de tudo, um excelente profissional. Muito obrigado por, gentilmente, ter aceitado a orientação e estar sempre presente lendo os artigos da tese, dando ideias, contribuindo para a evolução do trabalho, trocando e-mails e estar sempre disponível na sua sala. Devo muito desta tese a ti! Obrigado!
 
@@ -370,9 +368,7 @@ library(rgdal)
 library(spdep)
 library(pander)
 library(xtable)
-library(tidyverse) # Tem muitos pacotes como ggplo2, tidyr...
-#library(ggplot2)
-#library(tidyr) # Função gather
+library(tidyverse) # Tem muitos pacotes como ggplot2, tidyr...
 
 library(stringr) # str_pad function
 library(rdrobust)
@@ -381,11 +377,8 @@ library(KernSmooth) # Função locpoly
 library(lubridate) # Para lidar com datas
 library(gam)
 
-#mapa_rs <- readOGR("C:/Users/renan/Desktop/Projeto Tese/Shapes", "43mu2500gsd", encoding='UTF-8', verbose=FALSE)
-mapa_rs <- readOGR("C:/Users/Windows 8.1/Desktop/Tese Doutorado/Shapes", "43mu2500gsd", encoding='UTF-8', verbose=FALSE)
-
-#setwd("C:/Users/renan/Desktop/Projeto Tese")
-setwd("C:/Users/Windows 8.1/Desktop/Tese Doutorado")
+setwd("C:/Users/Windows 8.1/Desktop/PhD-Thesis")
+mapa_rs <- readRDS("rdss/MapaRS.rds")
 @
 
 
@@ -408,7 +401,7 @@ Não obstante, além da recessão e da crise financeira vivida nos recentes anos
 \begin{figure}[H]
 \begin{center}
 <<plot_pib_introducao, fig=TRUE, height=3, echo=FALSE>>=
-pib <- read.csv2("pib_introducao.csv", header = T, dec = ",") %>%
+pib <- read.csv2("csvs/pib_introducao.csv", header = T, dec = ",") %>%
        mutate(X = 1:56)
 
 ggplot(pib, aes(x = Data, y = PIB, group = 1)) + 
@@ -440,7 +433,7 @@ ggplot(pib, aes(x = Data, y = PIB, group = 1)) +
 \begin{figure}[H]
 \begin{center}
 <<plot_desem_introducao, fig=TRUE, height=3, echo=FALSE>>=
-desem <- read.csv2("desemprego_introducao.csv", header = T, dec = ",") %>%
+desem <- read.csv2("csvs/desemprego_introducao.csv", header = T, dec = ",") %>%
          mutate(X = 1:305, Dia = 1) %>%
          unite(col = Teste, Dia, Mes, Ano, sep ="/") %>%
          mutate(Date = dmy(Teste))
@@ -538,7 +531,7 @@ Como ilustração, suponha o seguinte mapa de alguns municípios do Rio Grande d
 
 \begin{figure}[H]
 \begin{center}
-<<plot1, fig=TRUE, echo=FALSE>>=
+<<municipios_RS, fig=TRUE, echo=FALSE>>=
 aux <- numeric()
 am <- numeric()
 for (i in 1:498){
@@ -595,8 +588,8 @@ Com relação às estruturas de vizinhança utilizadas, também denominadas de g
 
 \begin{figure}[H]
 \begin{center}
-<<plot2, fig=TRUE, echo=FALSE>>=
-df_tx_mun_pre <- read.csv("DadosMunTxEnsaio2.csv", header=T, sep=";", dec=",")
+<<especificacoes_vizinhancas, fig=TRUE, echo=FALSE>>=
+df_tx_mun_pre <- read.csv("csvs/DadosMunTxEnsaio2.csv", header=T, sep=";", dec=",")
 df_tx_mun <- df_tx_mun_pre[df_tx_mun_pre$Mun != "Pinto Bandeira",] # Retira Pinto Bandeira
 
 crimes <- c("Roub", "RoubVei", "Latro", "Furt", "HomDol", "FurtVei", "ExtoMS") # Crimes a serem avaliados
@@ -808,8 +801,8 @@ A Figura \ref{fig:homDolRS} apresenta a evolução da taxa por 100.000 habitante
 
 \begin{figure}
 \begin{center}
-<<plot3, fig=TRUE, echo=FALSE>>=
-rs_df <- read.csv("DFEstEnsaio2.csv", header=T, sep=";", dec=",")
+<<evolu_homi_dol_RS, fig=TRUE, echo=FALSE>>=
+rs_df <- read.csv("csvs/DFEstEnsaio2.csv", header=T, sep=";", dec=",")
 crimes_sem_homicidio <- crimes[-which(crimes == "HomDol")]
 ggplot(rs_df, aes(x = 2002:2015, y = HomDol)) + 
   geom_line() +
@@ -828,7 +821,7 @@ Para os demais crimes do estado, a Figura \ref{fig:outroscrimesRS} apresenta a d
 
 \begin{figure}
 \begin{center}
-<<plot4, fig=TRUE, echo=FALSE>>=
+<<evolu_crimes_selecionados_RS, fig=TRUE, echo=FALSE>>=
 rsdf <- rs_df[,names(rs_df) %in% crimes_sem_homicidio]
 
 rsdf_gat <- gather(rsdf, Crime, Valor)
@@ -854,7 +847,7 @@ Além disso, foi criado o Índice de Municipalização da Segurança Pública (I
 
 \begin{figure}
 \begin{center}
-<<plot5, fig=TRUE, echo=FALSE>>=
+<<evolu_homi_dol_cinco_maiores_RS, fig=TRUE, echo=FALSE>>=
 cidades <- c("Porto Alegre", "Caxias do Sul", "Canoas", "Pelotas", "Santa Maria")
 mundf <- df_tx_mun_pre[which(df_tx_mun_pre$Mun %in% cidades),]
 mun_tx <- cbind(mundf[,1], mundf[,substring(names(mundf), first=4, last=nchar(names(mundf))-4) %in% crimes])
@@ -885,7 +878,7 @@ ggplot(df_hom_mun, aes(x = Ano, y = Valor, col = Cidade)) +
 
 \begin{figure}
 \begin{center}
-<<plot6, fig=TRUE, echo=FALSE>>=
+<<evolu_crimes_selecionados_cinco_maiores_RS, fig=TRUE, echo=FALSE>>=
 ggplot(df_out_mun, aes(x = Ano, y = Valor, col = Cidade)) + 
   geom_line(size = 1.1) +
   facet_wrap(~ Crime, scales = "free") +
@@ -1094,11 +1087,11 @@ A Figura \ref{fig:rela_INLA_Bruto} mostra a relação de ocorrência entre as es
 
 \begin{figure}
 \begin{center}
-<<plot7, fig=TRUE, echo=FALSE>>=
-load("Estimativas_de_Ocorrencia_modelos.Rdata")
-load("bases_para_estimar_y.Rdata")
+<<rela_INLA_Bruto, fig=TRUE, echo=FALSE>>=
+load("rdatas/Estimativas_de_Ocorrencia_modelos.Rdata")
+load("rdatas/bases_para_estimar_y.Rdata")
 
-corresp <- readRDS("Corresp_Mun_PopRS.rds")
+corresp <- readRDS("rdss/Corresp_Mun_PopRS.rds")
 corresp$CodIBGE <- as.factor(corresp$CodIBGE) # Para pode 'joinear' depois
 corresp_aux <- corresp %>% select(CodIBGE, Cidade)
 
@@ -1142,7 +1135,7 @@ As Figuras \ref{fig:compara_homdol_muni_selecionados} e \ref{fig:compara_latro_m
 
 \begin{figure}
 \begin{center}
-<<plot8, fig=TRUE, echo=FALSE>>=
+<<compara_homdol_muni_selecionados, fig=TRUE, echo=FALSE>>=
 # Calculando o número de ocorrências combinando INLA e o dado bruto
 w_INLA <- 2
 w_Bruto <- 1
@@ -1179,7 +1172,7 @@ ggplot(aux, aes(x = Ano+2001, y = Quantidade, col = Tipo)) + geom_line(size= 1.1
 
 \begin{figure}
 \begin{center}
-<<plot9, fig=TRUE, echo=FALSE>>=
+<<compara_latro_muni_selecionados, fig=TRUE, echo=FALSE>>=
 # Latrocínio: Riozinho e Muliterno
 
 cid_latro <- c("ALVORADA", "DEZESSEIS DE NOVEMBRO", "RIOZINHO", "MULITERNO")
@@ -1208,7 +1201,7 @@ O gráfico mais à direita ilustra os índices dos crimes cometidos contra a vid
 
 \begin{figure}
 \begin{center}
-<<plot10, fig=TRUE, echo=FALSE>>=
+<<indices_top10, fig=TRUE, echo=FALSE>>=
 base_aux4 <- base_aux3 %>%
              mutate(Numerador = Roubo_O * 4 +
                                 RouboVei_O * 4 +
@@ -1249,7 +1242,7 @@ ggplot(tb_top_10, aes(x=Ano+2001, y = Valor, col=Cidade)) + geom_line(size=1.1) 
 
 \begin{figure}
 \begin{center}
-<<plot11, fig=TRUE, echo=FALSE>>=
+<<indices_low10, fig=TRUE, echo=FALSE>>=
 # TOP 10 CIDADES ESTRANHAS #
 cidades <- c("ESMERALDA", "ENTRE RIOS DO SUL", "PONTE PRETA", "SAO JOSE DO HERVAL", "SAO JOSE DO INHACORA", "RIOZINHO", "MULITERNO", "GRAMADO DOS LOUREIROS", "NICOLAU VERGUEIRO", "NOVA RAMADA") # GRAMADO DOS LOUREIROS FOI LATRO EM 2010 E NICOLAU FOI LATRO EM 2009
 tb2 <- base_aux4 %>% filter(Cidade %in% cidades)
@@ -1548,10 +1541,10 @@ A pre-regression nonparametric line was included in each of the charts to check 
 
 \begin{figure}[H]
 \begin{center}
-<<plot1_HV, fig=TRUE, echo=FALSE>>=
-base <- readRDS("BaseHV.rds")
-pop_mun <- readRDS("DemoVisBase.rds")
-meteoro <- readRDS("meteoro_pos.rds") # Já adicionando a precipitação
+<<taxas_homicidios_por_ano_RS_HV, fig=TRUE, echo=FALSE>>=
+base <- readRDS("rdss/BaseHV.rds")
+pop_mun <- readRDS("rdss/DemoVisBase.rds")
+meteoro <- readRDS("rdss/meteoro_pos.rds") # Já adicionando a precipitação
 
 corresp_pop <- pop_mun %>% 
                filter(Classe == "Total") %>% 
@@ -1788,7 +1781,7 @@ When we do not distinguish per year from the series and analyze only the 80 days
 
 \begin{figure}[H]
 \begin{center}
-<<plot2_HV, fig=TRUE, echo=FALSE>>=
+<<taxas_homicidios_por_ano_RS_empilhado_agrupando_Diff_HV, fig=TRUE, echo=FALSE>>=
 # Empilhado
 tb_RS_full_day_empilhado <- tb_RS_full_day %>%
   group_by(Diff_Entrada) %>%
@@ -1838,7 +1831,7 @@ tb_RS_full_day %>%
 
 \begin{figure}[H]
 \begin{center}
-<<plot3_HV, fig=TRUE, echo=FALSE>>=
+<<dias_semana_HV, fig=TRUE, echo=FALSE>>=
 # Box-Plot Dias da Semana
 tb_RS_full_day %>%
 ggplot(aes(x = DiaSemana, y = Taxa)) +
@@ -1862,7 +1855,7 @@ The complete hours have a high frequency and prominence in the graph. However, i
 
 \begin{figure}[H]
 \begin{center}
-<<plot4_HV, fig=TRUE, echo=FALSE>>=
+<<horarios_HV, fig=TRUE, echo=FALSE>>=
 # Gráficos por horário
 # head(obitos_horarios)
 # (1197 + 1412 + 1581 (era com o horário 0000)) / sum(obitos_horarios$Qtd_Obitos) percentagem de missings!
@@ -3096,14 +3089,14 @@ Adicionalmente, a inspeção visual deve fazer parte da modelagem de dados, uma 
 \begin{center}
 \begin{subfigure}{.55\textwidth}
   \centering
-  \includegraphics[width=.75\linewidth]{anscombe_dataset.png}
+  \includegraphics[width=.75\linewidth]{figs/anscombe_dataset.png}
   \caption{Conjuntos de Dados}
   \label{fig:anscombe_data}
 \end{subfigure} \\ % Quebra a linha para fazer os gráficos na vertical
 \vspace{0.5cm} % Inclui um espaço em branco entre as figuras
 \begin{subfigure}{.75\textwidth}
   \centering
-  \includegraphics[width=.95\linewidth]{anscombe_quartet_plot.png}
+  \includegraphics[width=.95\linewidth]{figs/anscombe_quartet_plot.png}
   \caption{Gráficos e Estatísticas}
   \label{fig:anscombe_plot_stats}
 \end{subfigure}
@@ -3137,7 +3130,7 @@ Para que um conjunto de dados seja considerado \textit{tidy} é necessário o cu
 % Para o caption dos códigos lá em cima criei o ambiente 'rcode' e 'routput'. E tirei daqui: https://tex.stackexchange.com/questions/60721/how-to-label-a-code-section-in-sweave
 \begin{routput}
 <<echo=false>>=
-base_crime <- readRDS("base_crimevis_2016_pop_ok.rds")
+base_crime <- readRDS("rdss/base_crimevis_2016_pop_ok.rds")
 base_crime %>% 
   spread(Crime, Qtd) %>% 
   select(Mun, CodIBGE, Ano, Populacao, Roubo, Furto)
@@ -3184,7 +3177,7 @@ O Shiny \cite{shiny} é um pacote da linguagem \texttt{R} desenvolvido por membr
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=.75\linewidth]{dashboard_shiny_example.png}
+\includegraphics[width=.75\linewidth]{figs/dashboard_shiny_example.png}
 \caption{Exemplo de um aplicativo feito em Shiny.}
 \label{fig:shiny_example}
 \end{figure}
@@ -3255,7 +3248,7 @@ O Código \ref{code:server_generico} cria um objeto chamado \texttt{distPlot} co
 
 \begin{figure}[H]
 \centering
-\includegraphics{shiny_generico.png}
+\includegraphics{figs/shiny_generico.png}
 \caption{Resultado de um aplicativo genérico construído}
 \label{fig:shiny_example_generico}
 \end{figure}
@@ -3343,13 +3336,13 @@ Observe que esta visualização permite que se analise múltiplos tipos de crime
 \begin{figure}[H]
 \begin{subfigure}{.55\textwidth}
   \centering
-  \includegraphics[width=.85\linewidth]{compara_crimes.png}
+  \includegraphics[width=.85\linewidth]{figs/compara_crimes.png}
   \caption{Comparação de Crimes}
   \label{fig:comp_crime}
 \end{subfigure}%
 \begin{subfigure}{.55\textwidth}
   \centering
-  \includegraphics[width=.85\linewidth]{compara_cidades.png}
+  \includegraphics[width=.85\linewidth]{figs/compara_cidades.png}
   \caption{Comparação de Cidades}
   \label{fig:comp_cidade}
 \end{subfigure}
@@ -3420,7 +3413,7 @@ plot_ly(base_bolha, x = ~X, y = ~Y, size=~base_bolha$Pop, color = ~Grupos,
 
 \begin{routput}[H]
 <<echo=false>>=
-base_bolha <- readRDS("base_bolha.rds")
+base_bolha <- readRDS("rdss/base_bolha.rds")
 print(tbl_df(base_bolha), n = 6)
 @
 \caption{Base de Dados \textit{tidy} da relação entre crimes}
@@ -3433,7 +3426,7 @@ Adicionalmente, as cores dos círculos representam a criação de seis grupos ge
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=.75\linewidth]{screenshot_relacao2.png}
+\includegraphics[width=.75\linewidth]{figs/screenshot_relacao2.png}
 \caption{Exemplo de relação entre Homicídio Doloso e Furto com destaque em um grupo de municípios}
 \label{fig:relacao_screen}
 \end{figure}
@@ -3486,13 +3479,13 @@ Em termos de resultados das taxas, a Figura \ref{fig:mapa_crimevis} apresenta do
 \begin{figure}[H]
 \begin{subfigure}{.55\textwidth}
   \centering
-  \includegraphics[width=.85\linewidth]{mapa_roubo_veic.png}
+  \includegraphics[width=.85\linewidth]{figs/mapa_roubo_veic.png}
   \caption{Mapa do Roubo de Veículos no CrimeVis}
   \label{fig:mapa_roub}
 \end{subfigure}%
 \begin{subfigure}{.55\textwidth}
   \centering
-  \includegraphics[width=.85\linewidth]{mapa_destaque_furto.png}
+  \includegraphics[width=.85\linewidth]{figs/mapa_destaque_furto.png}
   \caption{Destaque no mapa de Furto no litoral norte}
   \label{fig:mapa_furto}
 \end{subfigure}
@@ -3528,7 +3521,7 @@ Um exemplo de resultado pode ser conferido na Figura \ref{fig:treemap_ex} onde, 
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=.75\linewidth]{exemplo_treemap.png}
+\includegraphics[width=.75\linewidth]{figs/exemplo_treemap.png}
 \caption{Exemplo de \textit{treemap} de Roubo de Veículos em 2016}
 \label{fig:treemap_ex}
 \end{figure}
@@ -3723,14 +3716,14 @@ Por fim, está disponível ao usuário, tanto na análise temporal quanto na esp
 \begin{center}
 \begin{subfigure}{.95\textwidth}
   \centering
-  \includegraphics[width=1.00\linewidth]{screenshot_crimevis_temporal_com_testes.png}
+  \includegraphics[width=1.00\linewidth]{figs/screenshot_crimevis_temporal_com_testes.png}
   \caption{Mapas e cadeias temporais}
   \label{fig:acoplamento_crimevis_temp}
 \end{subfigure} \\ % Quebra a linha para fazer os gráficos na vertical
 \vspace{0.75cm} % Inclui um espaço em branco entre as figuras
 \begin{subfigure}{.95\textwidth}
   \centering
-  \includegraphics[width=1.00\linewidth]{screenshot_crimevis_espaco_temporal_com_testes.png}
+  \includegraphics[width=1.00\linewidth]{figs/screenshot_crimevis_espaco_temporal_com_testes.png}
   \caption{Mapas e cadeias espaço-temporais}
   \label{fig:acoplamento_crimevis_espaco_temp}
 \end{subfigure}
@@ -3790,12 +3783,11 @@ A Figura \ref{fig:mapas_roub_vei_markov_2002_2016} mostra a evolução temporal 
 <<map_roub_vei_2002_2016, fig=TRUE, width=6, height=3, echo=FALSE>>=
 library(stringi)
 
-base_crime <- readRDS("base_crimevis_2016_pop_ok.rds") # Está em tibble
+base_crime <- readRDS("rdss/base_crimevis_2016_pop_ok.rds") # Está em tibble
 
 base_crime$Mun <- stri_conv(as.character(base_crime$Mun), "latin1", "UTF-8")
 base_crime$Crime <- stri_conv(as.character(base_crime$Crime), "latin1", "UTF-8")
 
-mapa_rs <- readRDS("MapaRS.rds")
 mapa_rs@data$Nome_Munic <- stri_conv(as.character(mapa_rs@data$Nome_Munic), "latin1", "UTF-8")
 
 gera_mapas <- function(anos_escolhidos, crime_escolhido) {
@@ -3946,7 +3938,7 @@ Sob esta hipótese de que o aumento da frota possa ter afetado a ''migração'' 
 \begin{figure}[H]
 \begin{center}
 <<evo_frota, fig=TRUE, width=6, height=3, echo=FALSE>>=
-base_frota <- readRDS("base_frota.rds") %>% 
+base_frota <- readRDS("rdss/base_frota.rds") %>% 
               mutate(Frota_100pp = Passageiro/Populacao * 100)
 
 ggplot(base_frota, aes(x = Ano, y = Frota_100pp)) + geom_line() + ylab("Nº de Veículos")
@@ -4123,7 +4115,7 @@ gera_mapas(c(2002, 2016), "Delitos Relacionados à Armas e Munições")
 
 \begin{figure}[H]
 \centering
-\includegraphics[height=5cm,width=0.65\linewidth]{armas_cinco_maiores_municipios.png}
+\includegraphics[height=5cm,width=0.65\linewidth]{figs/armas_cinco_maiores_municipios.png}
 \caption{Evolução da Taxa dos Delitos Relacionados à Armas e Munições do RS e dos seus cinco maiores municípios}
 \label{fig:evolucao_armas_cinco_maiores}
 \end{figure}
@@ -5475,6 +5467,6 @@ O terceiro e quarto ensaios possuem um grande grau de relação tendo em vista q
 % Referências bibliográficas
 % ----------------------------------------------------------
 %\bibliographystyle{apalike}
-\bibliography{BibliografiaTeseSW}
+\bibliography{Bibliografia_Tese_Sweave}
 
 \end{document}

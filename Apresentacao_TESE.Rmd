@@ -17,7 +17,7 @@ header-includes:
 - \widowpenalties 1 150
 fontsize: 10pt
 subtitle: Tese de Doutorado (PPGE/PUCRS)
-bibliography: BibliografiaTese.bib
+bibliography: Bibliografia_Tese_Presentation.bib
 ---
 
 ```{r setup, echo = FALSE, warning=FALSE, message=FALSE, include=FALSE}
@@ -27,9 +27,7 @@ library(rgdal)
 library(spdep)
 library(pander)
 library(xtable)
-library(tidyverse) # Tem muitos pacotes como ggplo2, tidyr...
-#library(ggplot2)
-#library(tidyr) # Função gather
+library(tidyverse) # Tem muitos pacotes como ggplot2, tidyr...
 
 library(stringr) # str_pad function
 library(rdrobust)
@@ -37,12 +35,10 @@ library(rdd) # Discontinuity regressions
 library(KernSmooth) # Função locpoly
 library(lubridate) # Para lidar com datas
 library(gam)
-#mapa_rs <- readOGR("C:/Users/renan/Desktop/Projeto Tese/Shapes", "43mu2500gsd", encoding='UTF-8', verbose=FALSE)
-mapa_rs <- readOGR("C:/Users/Windows 8.1/Desktop/Projeto Tese/Shapes", "43mu2500gsd", encoding='UTF-8', verbose=FALSE)
-#mapa_rs_pre <- readOGR("C:/Users/renan/Desktop/Projeto Tese/Shapes", "43mu2500gsd", encoding='UTF-8', verbose=FALSE)
-mapa_rs_pre <- readOGR("C:/Users/Windows 8.1/Desktop/Projeto Tese/Shapes", "43mu2500gsd", encoding='UTF-8', verbose=FALSE)
-#setwd("C:/Users/renan/Desktop/Projeto Tese")
-setwd("C:/Users/Windows 8.1/Desktop/Projeto Tese")
+
+setwd("C:/Users/Windows 8.1/Desktop/PhD-Thesis")
+mapa_rs <- readRDS("rdss/MapaRS.rds")
+mapa_rs_pre <- mapa_rs
 ```
 
 
@@ -83,7 +79,7 @@ setwd("C:/Users/Windows 8.1/Desktop/Projeto Tese")
 ```{r echo=FALSE, warning=FALSE, message=FALSE, fig.cap = "Exemplo de Diferentes Especificações. (a) Vizinhos de contiguidade de 1ª ordem. (b) Knn de 1ª ordem. (c) Knn de 2ª ordem. (d) Knn de 3ª ordem.\\label{fig:tipos_graf}", fig.height = 5, fig.height = 5}
 
 
-df_tx_mun_pre <- read.csv("DadosMunTxEnsaio2.csv", header=T, sep=";", dec=",")
+df_tx_mun_pre <- read.csv("csvs/DadosMunTxEnsaio2.csv", header=T, sep=";", dec=",")
 df_tx_mun <- df_tx_mun_pre[df_tx_mun_pre$Mun != "Pinto Bandeira",] # Retira Pinto Bandeira
 
 crimes <- c("Roub", "RoubVei", "Latro", "Furt", "HomDol", "FurtVei", "ExtoMS") # Crimes a serem avaliados
@@ -316,10 +312,10 @@ Knn (3ª) & BYM + RW1 & 49996.59 & 65035.74 & 4345.36 & 109202.52 & 20705.62 & 6
 
 ### Estimativas INLA
 ```{r echo=FALSE, warning=FALSE, message=FALSE, fig.cap = "Comparação de Número de Homicídios de municípios selecionados\\label{fig:compara_homdol_muni_selecionados}", fig.height = 4, fig.align='center'}
-load("Estimativas_de_Ocorrencia_modelos.Rdata")
-load("bases_para_estimar_y.Rdata")
+load("rdatas/Estimativas_de_Ocorrencia_modelos.Rdata")
+load("rdatas/bases_para_estimar_y.Rdata")
 
-corresp <- readRDS("Corresp_Mun_PopRS.rds")
+corresp <- readRDS("rdss/Corresp_Mun_PopRS.rds")
 corresp$CodIBGE <- as.factor(corresp$CodIBGE) # Para pode 'joinear' depois
 corresp_aux <- corresp %>% select(CodIBGE, Cidade)
 
@@ -567,9 +563,9 @@ HR_{da}=\beta_{0}+\tau I(T_{da}\geq 0)+g(T_{da})+\beta_{1}Temp_{da}+\beta_{2}Pre
 
 ### Start of DST
 ```{r echo=FALSE, warning=FALSE, message=FALSE, cache=FALSE, results='asis', fig.align="center"}
-base <- readRDS("BaseHV.rds")
-pop_mun <- readRDS("DemoVisBase.rds")
-meteoro <- readRDS("meteoro_pos.rds") # Já adicionando a precipitação
+base <- readRDS("rdss/BaseHV.rds")
+pop_mun <- readRDS("rdss/DemoVisBase.rds")
+meteoro <- readRDS("rdss/meteoro_pos.rds") # Já adicionando a precipitação
 
 corresp_pop <- pop_mun %>% 
                filter(Classe == "Total") %>% 
@@ -976,15 +972,15 @@ ggplot(aux_graph_S, aes(x = Diff, y = Taxa, colour = Period)) +
 ## Repercussão
 ### Grande repercussão na mídia/governo/academia
 
-![Matéria do Jornal do Comércio e Vídeo Explicativo](crimevis_jc_fee.png)
+![Matéria do Jornal do Comércio e Vídeo Explicativo](figs/crimevis_jc_fee.png)
 
 ### Grande repercussão na mídia/governo/academia
 
-![Entrevista na TV Assembléia](crimevis_tv_assembleia.png)
+![Entrevista na TV Assembléia](figs/crimevis_tv_assembleia.png)
 
 ### Grande repercussão na mídia/governo/academia
 
-![I Simpósio Brasileiro de Economia do Crime no Palácio da Polícia](crimevis_simposio.png)
+![I Simpósio Brasileiro de Economia do Crime no Palácio da Polícia](figs/crimevis_simposio.png)
 
 
 
@@ -1101,7 +1097,7 @@ onde $S$ é o número de estratos, $f_{s,i,j}$ é a frequência de células do e
 
 - O Roubo de Veículos passou por um processo de migração para mais próximo da RMPA entre 2002 e 2016.
 
-![Roubo de Veículos entre 2002 e 2016](TESE_DE_DOUTORADO_RENAN_V13-map_roub_vei_2002_2016.pdf)
+![Roubo de Veículos entre 2002 e 2016](figs/TESE_DE_DOUTORADO_RENAN_FINAL-map_roub_vei_2002_2016.pdf)
 
 ### Roubo de Veículos
 - Se um município não teve crime em 2002, tem 0,39 de probabilidade de ter em 2016.
@@ -1160,7 +1156,7 @@ onde $S$ é o número de estratos, $f_{s,i,j}$ é a frequência de células do e
 - Entre 2002 e 2016: grande estabilidade regional.
 - Padrão espacial: a região norte do RS é menos violenta.
 - Estima-se 0,72 a prob. de se manter sem crime e 0,75 com crime.
-![Homicídio Doloso entre 2002 e 2016](TESE_DE_DOUTORADO_RENAN_V13-map_hom_dol_2002_2016.pdf)
+![Homicídio Doloso entre 2002 e 2016](figs/TESE_DE_DOUTORADO_RENAN_FINAL-map_hom_dol_2002_2016.pdf)
 
 ### Homicídio Doloso
 - Hipótese de homogeneidade temporal também em diversos outros subperíodos.
@@ -1184,23 +1180,23 @@ onde $S$ é o número de estratos, $f_{s,i,j}$ é a frequência de células do e
 
 ### Delitos relacionados à Armas e Munições
 
-![Delitos relacionados à Armas e Munições entre 2002 e 2016](TESE_DE_DOUTORADO_RENAN_V13-map_del_rel_armas_2002_2016.pdf)
+![Delitos relacionados à Armas e Munições entre 2002 e 2016](figs/TESE_DE_DOUTORADO_RENAN_FINAL-map_del_rel_armas_2002_2016.pdf)
 
 ### Delitos relacionados à Armas e Munições
 
-![](armas_cinco_maiores_municipios.png)
+![](figs/armas_cinco_maiores_municipios.png)
 
 ### Delitos relacionados à Armas e Munições
 
-![Delitos relacionados à Armas e Munições entre 2002 e 2003](TESE_DE_DOUTORADO_RENAN_V13-map_del_rel_armas_2002_2003.pdf)
+![Delitos relacionados à Armas e Munições entre 2002 e 2003](figs/TESE_DE_DOUTORADO_RENAN_FINAL-map_del_rel_armas_2002_2003.pdf)
 
 ### Delitos relacionados à Armas e Munições
 
-![Delitos relacionados à Armas e Munições entre 2003 e 2004](TESE_DE_DOUTORADO_RENAN_V13-map_del_rel_armas_2003_2004.pdf)
+![Delitos relacionados à Armas e Munições entre 2003 e 2004](figs/TESE_DE_DOUTORADO_RENAN_FINAL-map_del_rel_armas_2003_2004.pdf)
 
 ### Delitos relacionados à Armas e Munições
 
-![Delitos relacionados à Armas e Munições entre 2004 e 2005](TESE_DE_DOUTORADO_RENAN_V13-map_del_rel_armas_2004_2005.pdf)
+![Delitos relacionados à Armas e Munições entre 2004 e 2005](figs/TESE_DE_DOUTORADO_RENAN_FINAL-map_del_rel_armas_2004_2005.pdf)
 
 ### Tráfico de Entorpecentes
 - Alta similaridade com homicídios.

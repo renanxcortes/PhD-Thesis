@@ -50,10 +50,10 @@ nbrsw_k3 <- nb2listw(nbrsm_k3) # Lista de Vizinhança padronizada
 
 
 # Para o INLA
-#nb2INLA(file="c1.g", nbrsm_c1)
-#nb2INLA(file="k1.g", nbrsm_k1)
-#nb2INLA(file="k2.g", nbrsm_k2)
-#nb2INLA(file="k3.g", nbrsm_k3)
+#nb2INLA(file="graphs/c1.g", nbrsm_c1)
+#nb2INLA(file="graphs/k1.g", nbrsm_k1)
+#nb2INLA(file="graphs/k2.g", nbrsm_k2)
+#nb2INLA(file="graphs/k3.g", nbrsm_k3)
 
 
 
@@ -67,14 +67,14 @@ nbrsw_k3 <- nb2listw(nbrsm_k3) # Lista de Vizinhança padronizada
 # Modelos antigos, caso seja de interesse mudar as prioris
 #forms_elias <- list(m0=y ~ 1,
 #              m1=y ~ 1 + f(i, model="ar1"),
-#              m2=y ~ 1 + f(i, model="besag", graph="k1.g"),
-#              m3=y ~ 1 + f(Ano, model="ar1") + f(i, model="besag", graph="k1.g"),
-#              m4=y ~ 1 + f(i, model="besag", graph="k1.g",group=Ano, control.group=list(model="ar1", hyper=list(theta=list(param=c(0,1))))))
+#              m2=y ~ 1 + f(i, model="besag", graph="graphs/k1.g"),
+#              m3=y ~ 1 + f(Ano, model="ar1") + f(i, model="besag", graph="graphs/k1.g"),
+#              m4=y ~ 1 + f(i, model="besag", graph="graphs/k1.g",group=Ano, control.group=list(model="ar1", hyper=list(theta=list(param=c(0,1))))))
 
 # O ajuste tem que ser feito para vizinhos de 1 a 3 ordem no knn
-#forms_ant <- list(m2 = y ~ 1 + f(i, model="besag", graph="k1.g", adjust.for.con.comp = FALSE,
+#forms_ant <- list(m2 = y ~ 1 + f(i, model="besag", graph="graphs/k1.g", adjust.for.con.comp = FALSE,
 #                             hyper=list(prec=list(prior="loggamma",param=c(1,0.0005)))),
-#                  m5 = y ~ 1 + f(i, model="bym"  , graph="k1.g", adjust.for.con.comp = FALSE,
+#                  m5 = y ~ 1 + f(i, model="bym"  , graph="graphs/k1.g", adjust.for.con.comp = FALSE,
 #                             hyper=list(prec.unstruct=list(prior="loggamma",param=c(1,0.0005)),
 #                                        prec.spatial =list(prior="loggamma",param=c(1,0.0005)))))
 
@@ -117,25 +117,25 @@ base$y <- base$Variavel
 base$i <- rep(1:496, times = length(unique(base$Ano)))
 
 # O ajuste tem que ser feito para vizinhos de 1 a 3 ordem no knn
-forms <- list(m.bes.c1 =    y ~ 1 + f(i, model="besag", graph="c1.g"),
-              m.bym.c1 =    y ~ 1 + f(i, model="bym"  , graph="c1.g"),
-              m.bes.rw.c1 = y ~ 1 + f(i, model="besag", graph="c1.g") + f(Ano, model="rw1"),
-              m.bym.rw.c1 = y ~ 1 + f(i, model="bym",   graph="c1.g") + f(Ano, model="rw1"),
+forms <- list(m.bes.c1 =    y ~ 1 + f(i, model="besag", graph="graphs/c1.g"),
+              m.bym.c1 =    y ~ 1 + f(i, model="bym"  , graph="graphs/c1.g"),
+              m.bes.rw.c1 = y ~ 1 + f(i, model="besag", graph="graphs/c1.g") + f(Ano, model="rw1"),
+              m.bym.rw.c1 = y ~ 1 + f(i, model="bym",   graph="graphs/c1.g") + f(Ano, model="rw1"),
               
-              m.bes.k1 =    y ~ 1 + f(i, model="besag", graph="k1.g", adjust.for.con.comp = FALSE),
-              m.bym.k1 =    y ~ 1 + f(i, model="bym"  , graph="k1.g", adjust.for.con.comp = FALSE),
-              m.bes.rw.k1 = y ~ 1 + f(i, model="besag", graph="k1.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
-              m.bym.rw.k1 = y ~ 1 + f(i, model="bym",   graph="k1.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
+              m.bes.k1 =    y ~ 1 + f(i, model="besag", graph="graphs/k1.g", adjust.for.con.comp = FALSE),
+              m.bym.k1 =    y ~ 1 + f(i, model="bym"  , graph="graphs/k1.g", adjust.for.con.comp = FALSE),
+              m.bes.rw.k1 = y ~ 1 + f(i, model="besag", graph="graphs/k1.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
+              m.bym.rw.k1 = y ~ 1 + f(i, model="bym",   graph="graphs/k1.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
               
-              m.bes.k2 =    y ~ 1 + f(i, model="besag", graph="k2.g", adjust.for.con.comp = FALSE),
-              m.bym.k2 =    y ~ 1 + f(i, model="bym"  , graph="k2.g", adjust.for.con.comp = FALSE),
-              m.bes.rw.k2 = y ~ 1 + f(i, model="besag", graph="k2.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
-              m.bym.rw.k2 = y ~ 1 + f(i, model="bym",   graph="k2.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
+              m.bes.k2 =    y ~ 1 + f(i, model="besag", graph="graphs/k2.g", adjust.for.con.comp = FALSE),
+              m.bym.k2 =    y ~ 1 + f(i, model="bym"  , graph="graphs/k2.g", adjust.for.con.comp = FALSE),
+              m.bes.rw.k2 = y ~ 1 + f(i, model="besag", graph="graphs/k2.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
+              m.bym.rw.k2 = y ~ 1 + f(i, model="bym",   graph="graphs/k2.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
               
-              m.bes.k3 =    y ~ 1 + f(i, model="besag", graph="k3.g", adjust.for.con.comp = FALSE),
-              m.bym.k3 =    y ~ 1 + f(i, model="bym"  , graph="k3.g", adjust.for.con.comp = FALSE),
-              m.bes.rw.k3 = y ~ 1 + f(i, model="besag", graph="k3.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
-              m.bym.rw.k3 = y ~ 1 + f(i, model="bym",   graph="k3.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"))
+              m.bes.k3 =    y ~ 1 + f(i, model="besag", graph="graphs/k3.g", adjust.for.con.comp = FALSE),
+              m.bym.k3 =    y ~ 1 + f(i, model="bym"  , graph="graphs/k3.g", adjust.for.con.comp = FALSE),
+              m.bes.rw.k3 = y ~ 1 + f(i, model="besag", graph="graphs/k3.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
+              m.bym.rw.k3 = y ~ 1 + f(i, model="bym",   graph="graphs/k3.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"))
 
 
 mods.roub <- lapply(forms, inla, family="Poisson",
@@ -171,25 +171,25 @@ base$y <- base$Variavel
 base$i <- rep(1:496, times = length(unique(base$Ano)))
 
 # O ajuste tem que ser feito para vizinhos de 1 a 3 ordem no knn
-forms <- list(m.bes.c1 =    y ~ 1 + f(i, model="besag", graph="c1.g"),
-              m.bym.c1 =    y ~ 1 + f(i, model="bym"  , graph="c1.g"),
-              m.bes.rw.c1 = y ~ 1 + f(i, model="besag", graph="c1.g") + f(Ano, model="rw1"),
-              m.bym.rw.c1 = y ~ 1 + f(i, model="bym",   graph="c1.g") + f(Ano, model="rw1"),
+forms <- list(m.bes.c1 =    y ~ 1 + f(i, model="besag", graph="graphs/c1.g"),
+              m.bym.c1 =    y ~ 1 + f(i, model="bym"  , graph="graphs/c1.g"),
+              m.bes.rw.c1 = y ~ 1 + f(i, model="besag", graph="graphs/c1.g") + f(Ano, model="rw1"),
+              m.bym.rw.c1 = y ~ 1 + f(i, model="bym",   graph="graphs/c1.g") + f(Ano, model="rw1"),
               
-              m.bes.k1 =    y ~ 1 + f(i, model="besag", graph="k1.g", adjust.for.con.comp = FALSE),
-              m.bym.k1 =    y ~ 1 + f(i, model="bym"  , graph="k1.g", adjust.for.con.comp = FALSE),
-              m.bes.rw.k1 = y ~ 1 + f(i, model="besag", graph="k1.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
-              m.bym.rw.k1 = y ~ 1 + f(i, model="bym",   graph="k1.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
+              m.bes.k1 =    y ~ 1 + f(i, model="besag", graph="graphs/k1.g", adjust.for.con.comp = FALSE),
+              m.bym.k1 =    y ~ 1 + f(i, model="bym"  , graph="graphs/k1.g", adjust.for.con.comp = FALSE),
+              m.bes.rw.k1 = y ~ 1 + f(i, model="besag", graph="graphs/k1.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
+              m.bym.rw.k1 = y ~ 1 + f(i, model="bym",   graph="graphs/k1.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
               
-              m.bes.k2 =    y ~ 1 + f(i, model="besag", graph="k2.g", adjust.for.con.comp = FALSE),
-              m.bym.k2 =    y ~ 1 + f(i, model="bym"  , graph="k2.g", adjust.for.con.comp = FALSE),
-              m.bes.rw.k2 = y ~ 1 + f(i, model="besag", graph="k2.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
-              m.bym.rw.k2 = y ~ 1 + f(i, model="bym",   graph="k2.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
+              m.bes.k2 =    y ~ 1 + f(i, model="besag", graph="graphs/k2.g", adjust.for.con.comp = FALSE),
+              m.bym.k2 =    y ~ 1 + f(i, model="bym"  , graph="graphs/k2.g", adjust.for.con.comp = FALSE),
+              m.bes.rw.k2 = y ~ 1 + f(i, model="besag", graph="graphs/k2.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
+              m.bym.rw.k2 = y ~ 1 + f(i, model="bym",   graph="graphs/k2.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
               
-              m.bes.k3 =    y ~ 1 + f(i, model="besag", graph="k3.g", adjust.for.con.comp = FALSE),
-              m.bym.k3 =    y ~ 1 + f(i, model="bym"  , graph="k3.g", adjust.for.con.comp = FALSE),
-              m.bes.rw.k3 = y ~ 1 + f(i, model="besag", graph="k3.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
-              m.bym.rw.k3 = y ~ 1 + f(i, model="bym",   graph="k3.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"))
+              m.bes.k3 =    y ~ 1 + f(i, model="besag", graph="graphs/k3.g", adjust.for.con.comp = FALSE),
+              m.bym.k3 =    y ~ 1 + f(i, model="bym"  , graph="graphs/k3.g", adjust.for.con.comp = FALSE),
+              m.bes.rw.k3 = y ~ 1 + f(i, model="besag", graph="graphs/k3.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
+              m.bym.rw.k3 = y ~ 1 + f(i, model="bym",   graph="graphs/k3.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"))
 
 
 mods.roubvei <- lapply(forms, inla, family="Poisson",
@@ -225,25 +225,25 @@ base$y <- base$Variavel
 base$i <- rep(1:496, times = length(unique(base$Ano)))
 
 # O ajuste tem que ser feito para vizinhos de 1 a 3 ordem no knn
-forms <- list(m.bes.c1 =    y ~ 1 + f(i, model="besag", graph="c1.g"),
-              m.bym.c1 =    y ~ 1 + f(i, model="bym"  , graph="c1.g"),
-              m.bes.rw.c1 = y ~ 1 + f(i, model="besag", graph="c1.g") + f(Ano, model="rw1"),
-              m.bym.rw.c1 = y ~ 1 + f(i, model="bym",   graph="c1.g") + f(Ano, model="rw1"),
+forms <- list(m.bes.c1 =    y ~ 1 + f(i, model="besag", graph="graphs/c1.g"),
+              m.bym.c1 =    y ~ 1 + f(i, model="bym"  , graph="graphs/c1.g"),
+              m.bes.rw.c1 = y ~ 1 + f(i, model="besag", graph="graphs/c1.g") + f(Ano, model="rw1"),
+              m.bym.rw.c1 = y ~ 1 + f(i, model="bym",   graph="graphs/c1.g") + f(Ano, model="rw1"),
               
-              m.bes.k1 =    y ~ 1 + f(i, model="besag", graph="k1.g", adjust.for.con.comp = FALSE),
-              m.bym.k1 =    y ~ 1 + f(i, model="bym"  , graph="k1.g", adjust.for.con.comp = FALSE),
-              m.bes.rw.k1 = y ~ 1 + f(i, model="besag", graph="k1.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
-              m.bym.rw.k1 = y ~ 1 + f(i, model="bym",   graph="k1.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
+              m.bes.k1 =    y ~ 1 + f(i, model="besag", graph="graphs/k1.g", adjust.for.con.comp = FALSE),
+              m.bym.k1 =    y ~ 1 + f(i, model="bym"  , graph="graphs/k1.g", adjust.for.con.comp = FALSE),
+              m.bes.rw.k1 = y ~ 1 + f(i, model="besag", graph="graphs/k1.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
+              m.bym.rw.k1 = y ~ 1 + f(i, model="bym",   graph="graphs/k1.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
               
-              m.bes.k2 =    y ~ 1 + f(i, model="besag", graph="k2.g", adjust.for.con.comp = FALSE),
-              m.bym.k2 =    y ~ 1 + f(i, model="bym"  , graph="k2.g", adjust.for.con.comp = FALSE),
-              m.bes.rw.k2 = y ~ 1 + f(i, model="besag", graph="k2.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
-              m.bym.rw.k2 = y ~ 1 + f(i, model="bym",   graph="k2.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
+              m.bes.k2 =    y ~ 1 + f(i, model="besag", graph="graphs/k2.g", adjust.for.con.comp = FALSE),
+              m.bym.k2 =    y ~ 1 + f(i, model="bym"  , graph="graphs/k2.g", adjust.for.con.comp = FALSE),
+              m.bes.rw.k2 = y ~ 1 + f(i, model="besag", graph="graphs/k2.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
+              m.bym.rw.k2 = y ~ 1 + f(i, model="bym",   graph="graphs/k2.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
               
-              m.bes.k3 =    y ~ 1 + f(i, model="besag", graph="k3.g", adjust.for.con.comp = FALSE),
-              m.bym.k3 =    y ~ 1 + f(i, model="bym"  , graph="k3.g", adjust.for.con.comp = FALSE),
-              m.bes.rw.k3 = y ~ 1 + f(i, model="besag", graph="k3.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
-              m.bym.rw.k3 = y ~ 1 + f(i, model="bym",   graph="k3.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"))
+              m.bes.k3 =    y ~ 1 + f(i, model="besag", graph="graphs/k3.g", adjust.for.con.comp = FALSE),
+              m.bym.k3 =    y ~ 1 + f(i, model="bym"  , graph="graphs/k3.g", adjust.for.con.comp = FALSE),
+              m.bes.rw.k3 = y ~ 1 + f(i, model="besag", graph="graphs/k3.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
+              m.bym.rw.k3 = y ~ 1 + f(i, model="bym",   graph="graphs/k3.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"))
 
 
 mods.latro <- lapply(forms, inla, family="Poisson",
@@ -278,25 +278,25 @@ base$y <- base$Variavel
 base$i <- rep(1:496, times = length(unique(base$Ano)))
 
 # O ajuste tem que ser feito para vizinhos de 1 a 3 ordem no knn
-forms <- list(m.bes.c1 =    y ~ 1 + f(i, model="besag", graph="c1.g"),
-              m.bym.c1 =    y ~ 1 + f(i, model="bym"  , graph="c1.g"),
-              m.bes.rw.c1 = y ~ 1 + f(i, model="besag", graph="c1.g") + f(Ano, model="rw1"),
-              m.bym.rw.c1 = y ~ 1 + f(i, model="bym",   graph="c1.g") + f(Ano, model="rw1"),
+forms <- list(m.bes.c1 =    y ~ 1 + f(i, model="besag", graph="graphs/c1.g"),
+              m.bym.c1 =    y ~ 1 + f(i, model="bym"  , graph="graphs/c1.g"),
+              m.bes.rw.c1 = y ~ 1 + f(i, model="besag", graph="graphs/c1.g") + f(Ano, model="rw1"),
+              m.bym.rw.c1 = y ~ 1 + f(i, model="bym",   graph="graphs/c1.g") + f(Ano, model="rw1"),
               
-              m.bes.k1 =    y ~ 1 + f(i, model="besag", graph="k1.g", adjust.for.con.comp = FALSE),
-              m.bym.k1 =    y ~ 1 + f(i, model="bym"  , graph="k1.g", adjust.for.con.comp = FALSE),
-              m.bes.rw.k1 = y ~ 1 + f(i, model="besag", graph="k1.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
-              m.bym.rw.k1 = y ~ 1 + f(i, model="bym",   graph="k1.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
+              m.bes.k1 =    y ~ 1 + f(i, model="besag", graph="graphs/k1.g", adjust.for.con.comp = FALSE),
+              m.bym.k1 =    y ~ 1 + f(i, model="bym"  , graph="graphs/k1.g", adjust.for.con.comp = FALSE),
+              m.bes.rw.k1 = y ~ 1 + f(i, model="besag", graph="graphs/k1.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
+              m.bym.rw.k1 = y ~ 1 + f(i, model="bym",   graph="graphs/k1.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
               
-              m.bes.k2 =    y ~ 1 + f(i, model="besag", graph="k2.g", adjust.for.con.comp = FALSE),
-              m.bym.k2 =    y ~ 1 + f(i, model="bym"  , graph="k2.g", adjust.for.con.comp = FALSE),
-              m.bes.rw.k2 = y ~ 1 + f(i, model="besag", graph="k2.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
-              m.bym.rw.k2 = y ~ 1 + f(i, model="bym",   graph="k2.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
+              m.bes.k2 =    y ~ 1 + f(i, model="besag", graph="graphs/k2.g", adjust.for.con.comp = FALSE),
+              m.bym.k2 =    y ~ 1 + f(i, model="bym"  , graph="graphs/k2.g", adjust.for.con.comp = FALSE),
+              m.bes.rw.k2 = y ~ 1 + f(i, model="besag", graph="graphs/k2.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
+              m.bym.rw.k2 = y ~ 1 + f(i, model="bym",   graph="graphs/k2.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
               
-              m.bes.k3 =    y ~ 1 + f(i, model="besag", graph="k3.g", adjust.for.con.comp = FALSE),
-              m.bym.k3 =    y ~ 1 + f(i, model="bym"  , graph="k3.g", adjust.for.con.comp = FALSE),
-              m.bes.rw.k3 = y ~ 1 + f(i, model="besag", graph="k3.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
-              m.bym.rw.k3 = y ~ 1 + f(i, model="bym",   graph="k3.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"))
+              m.bes.k3 =    y ~ 1 + f(i, model="besag", graph="graphs/k3.g", adjust.for.con.comp = FALSE),
+              m.bym.k3 =    y ~ 1 + f(i, model="bym"  , graph="graphs/k3.g", adjust.for.con.comp = FALSE),
+              m.bes.rw.k3 = y ~ 1 + f(i, model="besag", graph="graphs/k3.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
+              m.bym.rw.k3 = y ~ 1 + f(i, model="bym",   graph="graphs/k3.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"))
 
 
 mods.furt <- lapply(forms, inla, family="Poisson",
@@ -331,25 +331,25 @@ base$y <- base$Variavel
 base$i <- rep(1:496, times = length(unique(base$Ano)))
 
 # O ajuste tem que ser feito para vizinhos de 1 a 3 ordem no knn
-forms <- list(m.bes.c1 =    y ~ 1 + f(i, model="besag", graph="c1.g"),
-              m.bym.c1 =    y ~ 1 + f(i, model="bym"  , graph="c1.g"),
-              m.bes.rw.c1 = y ~ 1 + f(i, model="besag", graph="c1.g") + f(Ano, model="rw1"),
-              m.bym.rw.c1 = y ~ 1 + f(i, model="bym",   graph="c1.g") + f(Ano, model="rw1"),
+forms <- list(m.bes.c1 =    y ~ 1 + f(i, model="besag", graph="graphs/c1.g"),
+              m.bym.c1 =    y ~ 1 + f(i, model="bym"  , graph="graphs/c1.g"),
+              m.bes.rw.c1 = y ~ 1 + f(i, model="besag", graph="graphs/c1.g") + f(Ano, model="rw1"),
+              m.bym.rw.c1 = y ~ 1 + f(i, model="bym",   graph="graphs/c1.g") + f(Ano, model="rw1"),
               
-              m.bes.k1 =    y ~ 1 + f(i, model="besag", graph="k1.g", adjust.for.con.comp = FALSE),
-              m.bym.k1 =    y ~ 1 + f(i, model="bym"  , graph="k1.g", adjust.for.con.comp = FALSE),
-              m.bes.rw.k1 = y ~ 1 + f(i, model="besag", graph="k1.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
-              m.bym.rw.k1 = y ~ 1 + f(i, model="bym",   graph="k1.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
+              m.bes.k1 =    y ~ 1 + f(i, model="besag", graph="graphs/k1.g", adjust.for.con.comp = FALSE),
+              m.bym.k1 =    y ~ 1 + f(i, model="bym"  , graph="graphs/k1.g", adjust.for.con.comp = FALSE),
+              m.bes.rw.k1 = y ~ 1 + f(i, model="besag", graph="graphs/k1.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
+              m.bym.rw.k1 = y ~ 1 + f(i, model="bym",   graph="graphs/k1.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
               
-              m.bes.k2 =    y ~ 1 + f(i, model="besag", graph="k2.g", adjust.for.con.comp = FALSE),
-              m.bym.k2 =    y ~ 1 + f(i, model="bym"  , graph="k2.g", adjust.for.con.comp = FALSE),
-              m.bes.rw.k2 = y ~ 1 + f(i, model="besag", graph="k2.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
-              m.bym.rw.k2 = y ~ 1 + f(i, model="bym",   graph="k2.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
+              m.bes.k2 =    y ~ 1 + f(i, model="besag", graph="graphs/k2.g", adjust.for.con.comp = FALSE),
+              m.bym.k2 =    y ~ 1 + f(i, model="bym"  , graph="graphs/k2.g", adjust.for.con.comp = FALSE),
+              m.bes.rw.k2 = y ~ 1 + f(i, model="besag", graph="graphs/k2.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
+              m.bym.rw.k2 = y ~ 1 + f(i, model="bym",   graph="graphs/k2.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
               
-              m.bes.k3 =    y ~ 1 + f(i, model="besag", graph="k3.g", adjust.for.con.comp = FALSE),
-              m.bym.k3 =    y ~ 1 + f(i, model="bym"  , graph="k3.g", adjust.for.con.comp = FALSE),
-              m.bes.rw.k3 = y ~ 1 + f(i, model="besag", graph="k3.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
-              m.bym.rw.k3 = y ~ 1 + f(i, model="bym",   graph="k3.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"))
+              m.bes.k3 =    y ~ 1 + f(i, model="besag", graph="graphs/k3.g", adjust.for.con.comp = FALSE),
+              m.bym.k3 =    y ~ 1 + f(i, model="bym"  , graph="graphs/k3.g", adjust.for.con.comp = FALSE),
+              m.bes.rw.k3 = y ~ 1 + f(i, model="besag", graph="graphs/k3.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
+              m.bym.rw.k3 = y ~ 1 + f(i, model="bym",   graph="graphs/k3.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"))
 
 
 mods.homdol <- lapply(forms, inla, family="Poisson",
@@ -384,25 +384,25 @@ base$y <- base$Variavel
 base$i <- rep(1:496, times = length(unique(base$Ano)))
 
 # O ajuste tem que ser feito para vizinhos de 1 a 3 ordem no knn
-forms <- list(m.bes.c1 =    y ~ 1 + f(i, model="besag", graph="c1.g"),
-              m.bym.c1 =    y ~ 1 + f(i, model="bym"  , graph="c1.g"),
-              m.bes.rw.c1 = y ~ 1 + f(i, model="besag", graph="c1.g") + f(Ano, model="rw1"),
-              m.bym.rw.c1 = y ~ 1 + f(i, model="bym",   graph="c1.g") + f(Ano, model="rw1"),
+forms <- list(m.bes.c1 =    y ~ 1 + f(i, model="besag", graph="graphs/c1.g"),
+              m.bym.c1 =    y ~ 1 + f(i, model="bym"  , graph="graphs/c1.g"),
+              m.bes.rw.c1 = y ~ 1 + f(i, model="besag", graph="graphs/c1.g") + f(Ano, model="rw1"),
+              m.bym.rw.c1 = y ~ 1 + f(i, model="bym",   graph="graphs/c1.g") + f(Ano, model="rw1"),
               
-              m.bes.k1 =    y ~ 1 + f(i, model="besag", graph="k1.g", adjust.for.con.comp = FALSE),
-              m.bym.k1 =    y ~ 1 + f(i, model="bym"  , graph="k1.g", adjust.for.con.comp = FALSE),
-              m.bes.rw.k1 = y ~ 1 + f(i, model="besag", graph="k1.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
-              m.bym.rw.k1 = y ~ 1 + f(i, model="bym",   graph="k1.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
+              m.bes.k1 =    y ~ 1 + f(i, model="besag", graph="graphs/k1.g", adjust.for.con.comp = FALSE),
+              m.bym.k1 =    y ~ 1 + f(i, model="bym"  , graph="graphs/k1.g", adjust.for.con.comp = FALSE),
+              m.bes.rw.k1 = y ~ 1 + f(i, model="besag", graph="graphs/k1.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
+              m.bym.rw.k1 = y ~ 1 + f(i, model="bym",   graph="graphs/k1.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
               
-              m.bes.k2 =    y ~ 1 + f(i, model="besag", graph="k2.g", adjust.for.con.comp = FALSE),
-              m.bym.k2 =    y ~ 1 + f(i, model="bym"  , graph="k2.g", adjust.for.con.comp = FALSE),
-              m.bes.rw.k2 = y ~ 1 + f(i, model="besag", graph="k2.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
-              m.bym.rw.k2 = y ~ 1 + f(i, model="bym",   graph="k2.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
+              m.bes.k2 =    y ~ 1 + f(i, model="besag", graph="graphs/k2.g", adjust.for.con.comp = FALSE),
+              m.bym.k2 =    y ~ 1 + f(i, model="bym"  , graph="graphs/k2.g", adjust.for.con.comp = FALSE),
+              m.bes.rw.k2 = y ~ 1 + f(i, model="besag", graph="graphs/k2.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
+              m.bym.rw.k2 = y ~ 1 + f(i, model="bym",   graph="graphs/k2.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
               
-              m.bes.k3 =    y ~ 1 + f(i, model="besag", graph="k3.g", adjust.for.con.comp = FALSE),
-              m.bym.k3 =    y ~ 1 + f(i, model="bym"  , graph="k3.g", adjust.for.con.comp = FALSE),
-              m.bes.rw.k3 = y ~ 1 + f(i, model="besag", graph="k3.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
-              m.bym.rw.k3 = y ~ 1 + f(i, model="bym",   graph="k3.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"))
+              m.bes.k3 =    y ~ 1 + f(i, model="besag", graph="graphs/k3.g", adjust.for.con.comp = FALSE),
+              m.bym.k3 =    y ~ 1 + f(i, model="bym"  , graph="graphs/k3.g", adjust.for.con.comp = FALSE),
+              m.bes.rw.k3 = y ~ 1 + f(i, model="besag", graph="graphs/k3.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
+              m.bym.rw.k3 = y ~ 1 + f(i, model="bym",   graph="graphs/k3.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"))
 
 
 mods.furtvei <- lapply(forms, inla, family="Poisson",
@@ -438,25 +438,25 @@ base$y <- base$Variavel
 base$i <- rep(1:496, times = length(unique(base$Ano)))
 
 # O ajuste tem que ser feito para vizinhos de 1 a 3 ordem no knn
-forms <- list(m.bes.c1 =    y ~ 1 + f(i, model="besag", graph="c1.g"),
-              m.bym.c1 =    y ~ 1 + f(i, model="bym"  , graph="c1.g"),
-              m.bes.rw.c1 = y ~ 1 + f(i, model="besag", graph="c1.g") + f(Ano, model="rw1"),
-              m.bym.rw.c1 = y ~ 1 + f(i, model="bym",   graph="c1.g") + f(Ano, model="rw1"),
+forms <- list(m.bes.c1 =    y ~ 1 + f(i, model="besag", graph="graphs/c1.g"),
+              m.bym.c1 =    y ~ 1 + f(i, model="bym"  , graph="graphs/c1.g"),
+              m.bes.rw.c1 = y ~ 1 + f(i, model="besag", graph="graphs/c1.g") + f(Ano, model="rw1"),
+              m.bym.rw.c1 = y ~ 1 + f(i, model="bym",   graph="graphs/c1.g") + f(Ano, model="rw1"),
               
-              m.bes.k1 =    y ~ 1 + f(i, model="besag", graph="k1.g", adjust.for.con.comp = FALSE),
-              m.bym.k1 =    y ~ 1 + f(i, model="bym"  , graph="k1.g", adjust.for.con.comp = FALSE),
-              m.bes.rw.k1 = y ~ 1 + f(i, model="besag", graph="k1.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
-              m.bym.rw.k1 = y ~ 1 + f(i, model="bym",   graph="k1.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
+              m.bes.k1 =    y ~ 1 + f(i, model="besag", graph="graphs/k1.g", adjust.for.con.comp = FALSE),
+              m.bym.k1 =    y ~ 1 + f(i, model="bym"  , graph="graphs/k1.g", adjust.for.con.comp = FALSE),
+              m.bes.rw.k1 = y ~ 1 + f(i, model="besag", graph="graphs/k1.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
+              m.bym.rw.k1 = y ~ 1 + f(i, model="bym",   graph="graphs/k1.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
               
-              m.bes.k2 =    y ~ 1 + f(i, model="besag", graph="k2.g", adjust.for.con.comp = FALSE),
-              m.bym.k2 =    y ~ 1 + f(i, model="bym"  , graph="k2.g", adjust.for.con.comp = FALSE),
-              m.bes.rw.k2 = y ~ 1 + f(i, model="besag", graph="k2.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
-              m.bym.rw.k2 = y ~ 1 + f(i, model="bym",   graph="k2.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
+              m.bes.k2 =    y ~ 1 + f(i, model="besag", graph="graphs/k2.g", adjust.for.con.comp = FALSE),
+              m.bym.k2 =    y ~ 1 + f(i, model="bym"  , graph="graphs/k2.g", adjust.for.con.comp = FALSE),
+              m.bes.rw.k2 = y ~ 1 + f(i, model="besag", graph="graphs/k2.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
+              m.bym.rw.k2 = y ~ 1 + f(i, model="bym",   graph="graphs/k2.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
               
-              m.bes.k3 =    y ~ 1 + f(i, model="besag", graph="k3.g", adjust.for.con.comp = FALSE),
-              m.bym.k3 =    y ~ 1 + f(i, model="bym"  , graph="k3.g", adjust.for.con.comp = FALSE),
-              m.bes.rw.k3 = y ~ 1 + f(i, model="besag", graph="k3.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
-              m.bym.rw.k3 = y ~ 1 + f(i, model="bym",   graph="k3.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"))
+              m.bes.k3 =    y ~ 1 + f(i, model="besag", graph="graphs/k3.g", adjust.for.con.comp = FALSE),
+              m.bym.k3 =    y ~ 1 + f(i, model="bym"  , graph="graphs/k3.g", adjust.for.con.comp = FALSE),
+              m.bes.rw.k3 = y ~ 1 + f(i, model="besag", graph="graphs/k3.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"),
+              m.bym.rw.k3 = y ~ 1 + f(i, model="bym",   graph="graphs/k3.g", adjust.for.con.comp = FALSE) + f(Ano, model="rw1"))
 
 
 mods.extoms <- lapply(forms, inla, family="Poisson",
